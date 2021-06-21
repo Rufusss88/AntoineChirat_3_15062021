@@ -1,0 +1,22 @@
+{
+  "name": "antoinechirat_3_15062021",
+  "version": "1.0.0",
+  "description": "P3 reservia",
+  "main": "index.js",
+  "scripts": {
+    "scss" :"node-sass -watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rufusss88/AntoineChirat_3_15062021.git"
+  },
+  "author": "Antoine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rufusss88/AntoineChirat_3_15062021/issues"
+  },
+  "homepage": "https://github.com/Rufusss88/AntoineChirat_3_15062021#readme",
+  "dependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
