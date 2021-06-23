@@ -4,6 +4,7 @@
 $primary:#9356DC;
 $secondary:#FF79DA;
 $tertiary:#99E2D0;
+$background: #f6f6f6;
 /* colors */
 
 /* police */
@@ -22,6 +23,15 @@ $tertiary:#99E2D0;
 @mixin cardradiusandshadow{
     border-radius: 20px;
     box-shadow: 0px 5px 12px -4px rgba(145,145,145,0.73);
+}
+
+@mixin buttonlayout{
+    padding: .75rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: white;
+    background-image: linear-gradient( 0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    width: 300px;
 }
 
 @mixin photoradius{
@@ -55,26 +65,38 @@ body{
 }
 .localisation{
     text-align: center;
+    background-color: #f3f3f3;
+    padding: .75rem 1.5rem;
     span{
         margin-left: 10px;
     }
 }
+
 .explore{
     display:flex;
     flex-direction: column;
+    background-color: $background;
+    padding: .75rem 1.5rem;
     .exploretitle{
         text-align: center;
     }
     .exploretext{
         text-align: center;
     }
-    .button{
+    .explorebutton{
         @include cardradiusandshadow();
+        @include buttonlayout();
     }
 }
 
 .fonctionnementcarte{
+    background-color: $background;
     @include cardradiusandshadow();
+    padding: .75rem 1.5rem;
+    margin-bottom: 20px;
+    .fonctionnementtexte{
+        margin-left: 32px;
+    }
 }
 
 .carteimage{
@@ -86,7 +108,14 @@ body{
 
 .backgroundpicture{
     width: 100%;
-    height: 150px;
+    max-height: 512px;
+    object-fit: cover;
+}
+
+.restaurant{
+    .restaurantitle{
+        font-family:roboto ;
+    }
 }
 
 .restaurantcartes{
@@ -98,7 +127,7 @@ body{
     transition-property: transform;
     transition-duration: 500ms;
     &:hover{
-        transform: scale(1.1);
+        transform: scale(1.03);
     }
 }
 
@@ -108,6 +137,21 @@ body{
 
 .foodcard{
     @include cardradiusandshadow();
+    background-color: white;
+    display: grid;
+}
+
+.menu{
+    background-color: $background;
+    .menuheader{
+        font-family: Shrikhand;
+        font-size: 1.5em;
+    }
+
+}
+.commanderbtn{
+    @include cardradiusandshadow();
+    @include buttonlayout();
 }
 /* stylemain*/
 
@@ -115,9 +159,13 @@ body{
 .footer{
     background-color: black;
     color: white;
+    .footercontent{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
     h3{
         font-family: Shrikhand;
-        margin-left: 2em;
+        margin-left: 32px;
     }
     ul{
         list-style: none;
