@@ -6,6 +6,10 @@
   font-family: Shrikhand;
   src: url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 }
+@font-face {
+  font-family: Roboto;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+}
 /* police */
 /* mixin */
 /* mixin */
@@ -20,6 +24,10 @@
 
 /* styleheader*/
 /* style main*/
+body {
+  font-family: roboto;
+}
+
 .localisation {
   text-align: center;
 }
@@ -95,8 +103,9 @@
   background-color: black;
   color: white;
 }
-.footerh3 {
+.footer h3 {
   font-family: Shrikhand;
+  margin-left: 2em;
 }
 .footer ul {
   list-style: none;

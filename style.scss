@@ -11,6 +11,11 @@ $tertiary:#99E2D0;
     font-family: Shrikhand;
     src: url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 }
+
+@font-face{
+    font-family: Roboto;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+}
 /* police */
 
 /* mixin */
@@ -45,6 +50,9 @@ $tertiary:#99E2D0;
 /* styleheader*/
 
 /* style main*/
+body{
+    font-family: roboto;
+}
 .localisation{
     text-align: center;
     span{
@@ -64,7 +72,6 @@ $tertiary:#99E2D0;
         @include cardradiusandshadow();
     }
 }
-
 
 .fonctionnementcarte{
     @include cardradiusandshadow();
@@ -108,8 +115,9 @@ $tertiary:#99E2D0;
 .footer{
     background-color: black;
     color: white;
-    &h3{
+    h3{
         font-family: Shrikhand;
+        margin-left: 2em;
     }
     ul{
         list-style: none;
