@@ -62,8 +62,11 @@ $background: #f6f6f6;
 /* style main*/
 body{
     font-family: roboto;
+    margin:0px;
 }
 .localisation{
+    font-weight: 600;
+    font-size: 1.3rem;
     text-align: center;
     background-color: #f3f3f3;
     padding: .75rem 1.5rem;
@@ -79,6 +82,7 @@ body{
     padding: .75rem 1.5rem;
     .exploretitle{
         text-align: center;
+        font-size: 1.8rem;
     }
     .exploretext{
         text-align: center;
@@ -86,17 +90,23 @@ body{
     .explorebutton{
         @include cardradiusandshadow();
         @include buttonlayout();
+        width: fit-content;
     }
 }
 
-.fonctionnementcarte{
-    background-color: $background;
-    @include cardradiusandshadow();
-    padding: .75rem 1.5rem;
-    margin-bottom: 20px;
-    .fonctionnementtexte{
+.fonctionnement{
+    .fonctionnementtitle{
         margin-left: 32px;
     }
+    .fonctionnementcarte{
+        background-color: $background;
+        @include cardradiusandshadow();
+        padding: .75rem 1.5rem;
+        margin-bottom: 20px;
+    }
+        .fonctionnementtexte{
+            margin-left: 32px;
+        }
 }
 
 .carteimage{
@@ -112,8 +122,12 @@ body{
     object-fit: cover;
 }
 
-.restaurant{
-    .restaurantitle{
+.restaurants{
+    padding-top:45px;
+    padding-bottom:25px;
+    background-color: $background;
+    .restaurantstitle{
+        margin-left: 32px;
         font-family:roboto ;
     }
 }
@@ -174,4 +188,3 @@ body{
         margin-bottom: 5px;
     }
 }
-/* stylefooter*/
