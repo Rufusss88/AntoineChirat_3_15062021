@@ -1,6 +1,6 @@
 @import "/Users/chips/Desktop/AntoineChirat_3_15062021/utils/_variables.scss";
 @import "/Users/chips/Desktop/AntoineChirat_3_15062021/utils/_mixin.scss";
-@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/sass/composants/boutons.scss/_bouton.scss";
+@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/composants/_bouton.scss";
 
 /* styleheader*/
 .header{
@@ -39,12 +39,6 @@ body{
     .exploretext{
         text-align: center;
     }
-<<<<<<< HEAD:layout/sass/style.scss
-}
-
-.fonctionnement{
-    .fonctionnement--title{
-=======
     .explorebutton{
         @include cardradiusandshadow();
         @include buttonlayout();
@@ -54,7 +48,6 @@ body{
 
 .fonctionnement{
     .fonctionnementtitle{
->>>>>>> 07438438b5d0c920924df915757c72f816cc0468:style.scss
         margin-left: 32px;
     }
     .fonctionnementcarte{
@@ -63,15 +56,9 @@ body{
         padding: .75rem 1.5rem;
         margin-bottom: 20px;
     }
-<<<<<<< HEAD:layout/sass/style.scss
     .fonctionnementtexte{
             margin-left: 32px;
     }
-=======
-        .fonctionnementtexte{
-            margin-left: 32px;
-        }
->>>>>>> 07438438b5d0c920924df915757c72f816cc0468:style.scss
 }
 
 .carteimage{
@@ -150,3 +137,4 @@ body{
         margin-bottom: 5px;
     }
 }
+

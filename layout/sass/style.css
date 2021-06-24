@@ -70,14 +70,6 @@ body {
 .explore .exploretext {
   text-align: center;
 }
-<<<<<<< HEAD:layout/sass/style.css
-
-.fonctionnement .fonctionnement--title {
-  margin-left: 32px;
-}
-.fonctionnement .fonctionnementcarte {
-  background-color: #fafafa;
-=======
 .explore .explorebutton {
   border-radius: 20px;
   box-shadow: 0px 5px 12px -4px rgba(145, 145, 145, 0.73);
@@ -96,8 +88,7 @@ body {
   margin-left: 32px;
 }
 .fonctionnement .fonctionnementcarte {
-  background-color: #f6f6f6;
->>>>>>> 07438438b5d0c920924df915757c72f816cc0468:style.css
+  background-color: #fafafa;
   border-radius: 20px;
   box-shadow: 0px 5px 12px -4px rgba(145, 145, 145, 0.73);
   padding: 0.75rem 1.5rem;
@@ -126,11 +117,7 @@ body {
 .restaurants {
   padding-top: 45px;
   padding-bottom: 25px;
-<<<<<<< HEAD:layout/sass/style.css
   background-color: #fafafa;
-=======
-  background-color: #f6f6f6;
->>>>>>> 07438438b5d0c920924df915757c72f816cc0468:style.css
 }
 .restaurants .restaurantstitle {
   margin-left: 32px;
