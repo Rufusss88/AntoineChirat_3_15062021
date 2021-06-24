@@ -3,9 +3,13 @@
     @include buttonlayout();
     width: fit-content;
     margin: auto;
+    border: none;
 }
 
 .commanderbtn{
     @include cardradiusandshadow();
     @include buttonlayout();
+    width: fit-content;
+    margin: auto;
+    border: none;
 }

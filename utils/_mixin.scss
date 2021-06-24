@@ -18,10 +18,11 @@
 }
 
 @mixin nouveauattribute{
+    background-color: #99e2d0;
+    color: #1b6150;
+    padding: .5rem;
+    border-radius: .125rem;
     position: absolute;
-    right: 20px;
-    top: 20px;
-    background-color: $tertiary;
-    padding: 10px 15px 5px 15px;
-    border: 1px solid grey;
+    top: 1rem;
+    right: .75rem;
 }

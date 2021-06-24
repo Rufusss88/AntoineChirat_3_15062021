@@ -17,6 +17,7 @@
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
+  border: none;
 }
 
 .commanderbtn {
@@ -28,15 +29,28 @@
   color: white;
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   width: 300px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  border: none;
 }
 
 /* styleheader*/
 .header {
+  display: flex;
   text-align: center;
+}
+.header i {
+  margin: auto;
+  padding-left: 15px;
 }
 
 .logo {
   font-family: Shrikhand;
+  font-size: 2.5em;
+  flex-basis: 100%;
+  margin: auto;
 }
 
 /* styleheader*/
@@ -44,6 +58,7 @@
 body {
   font-family: roboto;
   margin: 0px;
+  width: 100%;
 }
 
 .localisation {
@@ -55,6 +70,7 @@ body {
 }
 .localisation span {
   margin-left: 10px;
+  font-size: 0.8em;
 }
 
 .explore {
@@ -69,6 +85,7 @@ body {
 }
 .explore .exploretext {
   text-align: center;
+  font-weight: 100;
 }
 .explore .explorebutton {
   border-radius: 20px;
@@ -82,6 +99,7 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  font-weight: 100;
 }
 
 .fonctionnement .fonctionnementtitle {
@@ -109,7 +127,7 @@ body {
 
 .backgroundpicture {
   width: 100%;
-  max-height: 512px;
+  height: 320px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -120,31 +138,51 @@ body {
   background-color: #fafafa;
 }
 .restaurants .restaurantstitle {
-  margin-left: 32px;
+  margin-left: 15px;
   font-family: roboto;
 }
 
 .restaurantcartes {
-  height: 256px;
   border-radius: 20px;
   box-shadow: 0px 5px 12px -4px rgba(145, 145, 145, 0.73);
-  border: 4px solid black;
   margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
   transform: scale(1);
   transition-property: transform;
   transition-duration: 500ms;
 }
+.restaurantcartes .carte {
+  text-decoration: none;
+}
 .restaurantcartes:hover {
   transform: scale(1.03);
 }
+.restaurantcartes footer {
+  display: grid;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+.restaurantcartes h3 {
+  margin: 0;
+}
+.restaurantcartes .restaurantquartier {
+  grid-column: 1;
+}
+.restaurantcartes .favorite {
+  grid-column: 2;
+  text-align: right;
+}
 
 .restaurantlegend {
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
   position: absolute;
-  right: 20px;
-  top: 20px;
-  background-color: #99E2D0;
-  padding: 10px 15px 5px 15px;
-  border: 1px solid grey;
+  top: 1rem;
+  right: 0.75rem;
 }
 
 .foodcard {
@@ -152,14 +190,55 @@ body {
   box-shadow: 0px 5px 12px -4px rgba(145, 145, 145, 0.73);
   background-color: white;
   display: grid;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.foodcard .foodcardtitle {
+  margin: 0;
+}
+.foodcard .foodcarddescription {
+  grid-column: 1;
+  margin-bottom: 0;
+}
+.foodcard .foodcardprice {
+  grid-column: 2;
+  text-align: right;
+  margin-bottom: 0;
 }
 
 .menu {
   background-color: #fafafa;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  margin-top: -35px;
+  position: relative;
 }
 .menu .menuheader {
   font-family: Shrikhand;
   font-size: 1.5em;
+}
+.menu .menuheader {
+  display: flex;
+}
+.menu .menutitle {
+  flex-basis: 70%;
+  font-size: 1.24em;
+  margin-left: 32px;
+}
+.menu i {
+  margin: auto;
+}
+
+.foodtitle {
+  margin-left: 15px;
+}
+
+.commander {
+  display: flex;
+  margin-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* stylemain*/
@@ -172,6 +251,11 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+.footer .footerlogo {
+  font-family: Shrikhand;
+  flex-basis: 100%;
+  margin-left: 32px;
+}
 .footer h3 {
   font-family: Shrikhand;
   margin-left: 32px;
@@ -181,4 +265,7 @@ body {
 }
 .footer li {
   margin-bottom: 5px;
+}
+.footer i {
+  margin-right: 10px;
 }/*# sourceMappingURL=style.css.map */
