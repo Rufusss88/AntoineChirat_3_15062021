@@ -2,7 +2,7 @@
 @import "/Users/chips/Desktop/AntoineChirat_3_15062021/utils/_mixin.scss";
 @import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/composants/_bouton.scss";
 @import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/composants/_icones.scss";
-
+@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/mobileandtablet.scss";
 /* styleheader*/
 .header{
     display: flex;
@@ -52,28 +52,30 @@ body{
         text-align: center;
         font-weight: 100;
     }
-    .explorebutton{
-        @include cardradiusandshadow();
-        @include buttonlayout();
-        width: fit-content;
-        font-weight: 100;
-    }
 }
 
 .fonctionnement{
+    margin-top:30px;
     .fonctionnementtitle{
         margin-left: 32px;
+    }
+    .fonctionnementetapes{
+        display: flex;
     }
     .fonctionnementcarte{
         background-color: $background;
         @include cardradiusandshadow();
         padding: .75rem 1.5rem;
         margin-bottom: 20px;
+        flex: 30%;
+        margin-right: 25px;
     }
     .fonctionnementtexte{
             margin-left: 32px;
     }
 }
+
+
 
 .carteimage{
     @include photoradius();
