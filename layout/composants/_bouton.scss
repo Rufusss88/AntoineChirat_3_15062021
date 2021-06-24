@@ -1,0 +1,11 @@
+.explorebutton{
+    @include cardradiusandshadow();
+    @include buttonlayout();
+    width: fit-content;
+    margin: auto;
+}
+
+.commanderbtn{
+    @include cardradiusandshadow();
+    @include buttonlayout();
+}

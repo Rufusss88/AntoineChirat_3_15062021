@@ -1,54 +1,6 @@
-/* Variables*/
-
-/* colors */
-$primary:#9356DC;
-$secondary:#FF79DA;
-$tertiary:#99E2D0;
-$background: #f6f6f6;
-/* colors */
-
-/* police */
-@font-face {
-    font-family: Shrikhand;
-    src: url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-}
-
-@font-face{
-    font-family: Roboto;
-    src: url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
-}
-/* police */
-
-/* mixin */
-@mixin cardradiusandshadow{
-    border-radius: 20px;
-    box-shadow: 0px 5px 12px -4px rgba(145,145,145,0.73);
-}
-
-@mixin buttonlayout{
-    padding: .75rem 1.5rem;
-    font-weight: 500;
-    font-size: 1.1rem;
-    color: white;
-    background-image: linear-gradient( 0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
-    width: 300px;
-}
-
-@mixin photoradius{
-    border-top-left-radius: 15px;
-    border-top-right-radius:15px;
-}
-
-@mixin nouveauattribute{
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    background-color: $tertiary;
-    padding: 10px 15px 5px 15px;
-    border: 1px solid grey;
-}
-/* mixin */
-
+@import "/Users/chips/Desktop/AntoineChirat_3_15062021/utils/_variables.scss";
+@import "/Users/chips/Desktop/AntoineChirat_3_15062021/utils/_mixin.scss";
+@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/sass/composants/boutons.scss/_bouton.scss";
 
 /* styleheader*/
 .header{
@@ -62,8 +14,11 @@ $background: #f6f6f6;
 /* style main*/
 body{
     font-family: roboto;
+    margin:0px;
 }
 .localisation{
+    font-weight: 600;
+    font-size: 1.3rem;
     text-align: center;
     background-color: #f3f3f3;
     padding: .75rem 1.5rem;
@@ -79,23 +34,25 @@ body{
     padding: .75rem 1.5rem;
     .exploretitle{
         text-align: center;
+        font-size: 1.8rem;
     }
     .exploretext{
         text-align: center;
     }
-    .explorebutton{
-        @include cardradiusandshadow();
-        @include buttonlayout();
-    }
 }
 
-.fonctionnementcarte{
-    background-color: $background;
-    @include cardradiusandshadow();
-    padding: .75rem 1.5rem;
-    margin-bottom: 20px;
-    .fonctionnementtexte{
+.fonctionnement{
+    .fonctionnement--title{
         margin-left: 32px;
+    }
+    .fonctionnementcarte{
+        background-color: $background;
+        @include cardradiusandshadow();
+        padding: .75rem 1.5rem;
+        margin-bottom: 20px;
+    }
+    .fonctionnementtexte{
+            margin-left: 32px;
     }
 }
 
@@ -112,8 +69,12 @@ body{
     object-fit: cover;
 }
 
-.restaurant{
-    .restaurantitle{
+.restaurants{
+    padding-top:45px;
+    padding-bottom:25px;
+    background-color: $background;
+    .restaurantstitle{
+        margin-left: 32px;
         font-family:roboto ;
     }
 }
@@ -149,10 +110,7 @@ body{
     }
 
 }
-.commanderbtn{
-    @include cardradiusandshadow();
-    @include buttonlayout();
-}
+
 /* stylemain*/
 
 /* stylefooter*/
@@ -174,4 +132,3 @@ body{
         margin-bottom: 5px;
     }
 }
-/* stylefooter*/
