@@ -130,13 +130,18 @@
 }
 .header i {
   margin: auto;
-  padding-left: 40px;
+  padding-left: 15px;
 }
 
 .logo {
   font-family: Shrikhand;
   flex-basis: 100%;
   margin: auto;
+  margin-right: 20px;
+}
+
+.logoindex {
+  margin-right: -7px;
 }
 
 /* styleheader*/
@@ -216,7 +221,7 @@ body {
 }
 
 .restaurantlegend {
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   color: #1b6150;
   padding: 0.5rem;
   border-radius: 0.125rem;
@@ -309,11 +314,6 @@ body {
 /* styledesktop*/
 /*version desktop*/
 @media all and (min-width: 950px) {
-  .restaurants {
-    margin-left: 175px;
-    margin-right: 175px;
-  }
-
   .restaurants .restaurantstitle {
     margin-left: 55px;
   }
@@ -342,26 +342,29 @@ body {
   .carte1 {
     grid-column: 1;
     grid-row: 1;
+    min-width: 500px;
+    max-width: 500px;
   }
 
   .carte2 {
     grid-column: 2;
     grid-row: 1;
+    min-width: 500px;
+    max-width: 500px;
   }
 
   .carte3 {
     grid-column: 1;
     grid-row: 2;
+    min-width: 500px;
+    max-width: 500px;
   }
 
   .carte4 {
     grid-column: 2;
     grid-row: 2;
-  }
-
-  .fonctionnement {
-    margin-left: 175px;
-    margin-right: 175px;
+    min-width: 500px;
+    max-width: 500px;
   }
 
   .fonctionnementetapes {

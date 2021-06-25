@@ -18,7 +18,7 @@
 }
 
 @mixin nouveauattribute{
-    background-color: #99e2d0;
+    background-color: $tertiary;
     color: #1b6150;
     padding: .5rem;
     border-radius: .125rem;
@@ -31,4 +31,3 @@
     margin-left: 175px; 
     margin-right: 175px;
 }
-
