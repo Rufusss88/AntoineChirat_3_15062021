@@ -3,7 +3,7 @@
 @import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/composants/_bouton.scss";
 @import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/composants/_icones.scss";
 @import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/composants/_cartes.scss";
-@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/mobileandtablet.scss";
+@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/composants/_mobileandtablet.scss";
 
 /* styleheader*/
 .header{
@@ -59,8 +59,6 @@ body{
 
 .fonctionnement{
     margin-top:30px;
-    padding-left: 170px;
-    padding-right: 170px;
     .fonctionnementtitle{
         margin-left: 32px;
     }
@@ -89,15 +87,12 @@ body{
     padding-top:45px;
     padding-bottom:25px;
     background-color: $background;
-    padding-left: 175px;
-    padding-right: 175px;
+    padding-left: 0;
+    padding-right: 0;
     .restaurantstitle{
         margin-left: 15px;
         font-family:roboto ;
         font-weight: 1000;
-    }
-    .cartecontainer{
-        display:grid;
     }
 }
 
@@ -170,7 +165,6 @@ body{
 .footer{
     background-color: #353535;
     color: white;
-    padding-left: 150px;
     .footercontent{
         padding-top: 15px;
         padding-bottom: 15px;

@@ -26,3 +26,22 @@
     top: 1rem;
     right: .75rem;
 }
+
+@mixin smartphoneview{
+    @media all and (max-width: 500px) {
+        .restaurants {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .fonctionnement{
+            padding-left: -175px;
+            padding-right: -175px;
+        }
+
+        .cartecontainer{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
