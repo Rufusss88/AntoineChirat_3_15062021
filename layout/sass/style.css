@@ -42,6 +42,15 @@
 }
 
 /*style boutons*/
+.iconheart {
+  font-size: 30px;
+}
+
+.iconback {
+  font-size: 30px;
+  margin-top: 5px;
+}
+
 /* style carte*/
 .fonctionnementcarte {
   background-color: #fafafa;
@@ -118,6 +127,7 @@
 .restaurantcartes .favorite {
   grid-column: 2;
   text-align: right;
+  grid-row: 1;
 }
 
 /* style carte*/
@@ -129,7 +139,6 @@
   padding-bottom: 15px;
 }
 .header i {
-  margin: auto;
   padding-left: 15px;
 }
 
@@ -303,6 +312,15 @@ body {
 }
 .footer li {
   margin-bottom: 5px;
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid transparent;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.footer li:hover {
+  border-color: white;
 }
 .footer .list1 {
   margin-right: 12px;
@@ -312,7 +330,6 @@ body {
 }
 
 /* styledesktop*/
-/*version desktop*/
 @media all and (min-width: 950px) {
   .restaurants .restaurantstitle {
     margin-left: 55px;
@@ -372,5 +389,4 @@ body {
     flex-direction: row;
   }
 }
-/*version desktop*/
 /* styledesktop*//*# sourceMappingURL=style.css.map */

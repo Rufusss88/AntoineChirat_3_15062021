@@ -11,7 +11,6 @@
     padding-top:15px;
     padding-bottom:15px;
     i{
-    margin: auto;
     padding-left: 15px;
     }
 }
@@ -180,6 +179,13 @@ body{
     }
     li{
         margin-bottom: 5px;
+        text-decoration: none;
+        color: white;
+        border-bottom: 1px solid transparent;
+        width: fit-content;
+        &:hover{
+            border-color:white;
+        }
     }
     .list1{
         margin-right :12px;
