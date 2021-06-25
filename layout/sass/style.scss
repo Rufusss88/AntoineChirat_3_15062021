@@ -61,13 +61,13 @@ body{
     margin-top:30px;
     display: flex;
     flex-direction: column;
-    }
-    .fonctionnementtitle{
+        .fonctionnementtitle{
         margin-left: 32px;
-    }
-    .fonctionnementtexte{
+        }
+        .fonctionnementtexte{
         margin-left: 32px;
-    }
+        }
+}
 
 
 .carteimage{
@@ -105,6 +105,7 @@ body{
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
     position: relative;
+    margin-top: -65px;
     .menuheader{
         font-family: Shrikhand;
         font-size: 1.5em;
@@ -113,8 +114,8 @@ body{
     }
     .menutitle{
         flex-basis: 95%;
-        font-size: 1.24em;
-        margin-left: 32px;
+        font-size: 1em;
+        margin-left: 20px;
     }
     .menuicone{
         flex-basis: 5%;
@@ -148,7 +149,6 @@ body{
     margin-top: 30px;
     padding-bottom: 30px;
 }
-
 /* stylemain*/
 
 /* stylefooter*/
@@ -183,58 +183,6 @@ body{
     }
 }
 
-@media all and (min-width: 950px) {
-    .restaurants{
-        margin-left: 175px;
-        margin-right: 175px;
-    }
-    .restaurants .restaurantstitle{
-        margin-left:55px;
-    }
-
-    .menu{
-        margin-left: 175px;
-        margin-right: 175px;
-    }
-
-    .menu .menucontainer{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .cartecontainer{
-        display: grid;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-
-    .carte1{
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .carte2{
-        grid-column: 2;
-        grid-row: 1;
-    }
-
-    .carte3{
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    .carte4{
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    .fonctionnement{
-      margin-left: 175px;
-      margin-right: 175px;
-    }
-    .fonctionnementetapes {
-      display: flex;
-      flex-direction: row;
-  
-    }
-  }
+/* styledesktop*/
+@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/composants/_desktopview.scss";
+/* styledesktop*/

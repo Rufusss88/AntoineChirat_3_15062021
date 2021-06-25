@@ -5,6 +5,7 @@
 /* */
 /* */
 /* */
+/*style boutons*/
 .explorebutton {
   border-radius: 20px;
   box-shadow: 0px 5px 12px -4px rgba(145, 145, 145, 0.73);
@@ -40,6 +41,8 @@
   font-weight: 600;
 }
 
+/*style boutons*/
+/* style carte*/
 .fonctionnementcarte {
   background-color: #fafafa;
   border-radius: 20px;
@@ -117,7 +120,7 @@
   text-align: right;
 }
 
-/* Disposition grid page d'accueil version desktop*/
+/* style carte*/
 /* styleheader*/
 .header {
   display: flex;
@@ -176,12 +179,10 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-.fonctionnementtitle {
+.fonctionnement .fonctionnementtitle {
   margin-left: 32px;
 }
-
-.fonctionnementtexte {
+.fonctionnement .fonctionnementtexte {
   margin-left: 32px;
 }
 
@@ -229,6 +230,7 @@ body {
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
   position: relative;
+  margin-top: -65px;
 }
 .menu .menuheader {
   font-family: Shrikhand;
@@ -238,8 +240,8 @@ body {
 }
 .menu .menutitle {
   flex-basis: 95%;
-  font-size: 1.24em;
-  margin-left: 32px;
+  font-size: 1em;
+  margin-left: 20px;
 }
 .menu .menuicone {
   flex-basis: 5%;
@@ -304,6 +306,8 @@ body {
   margin-right: 4px;
 }
 
+/* styledesktop*/
+/*version desktop*/
 @media all and (min-width: 950px) {
   .restaurants {
     margin-left: 175px;
@@ -317,6 +321,11 @@ body {
   .menu {
     margin-left: 175px;
     margin-right: 175px;
+  }
+
+  .menu .menutitle {
+    font-size: 1.24em;
+    margin-left: 32px;
   }
 
   .menu .menucontainer {
@@ -359,4 +368,6 @@ body {
     display: flex;
     flex-direction: row;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*version desktop*/
+/* styledesktop*//*# sourceMappingURL=style.css.map */
