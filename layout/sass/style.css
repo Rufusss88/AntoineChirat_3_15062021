@@ -117,30 +117,7 @@
   text-align: right;
 }
 
-
-@media (max-width: 767px) {
-  .fonctionnementetapes {
-    flex-direction: column;
-  }
-
-  .footer {
-    padding: none;
-  }
-
-  .cartecontainer {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (max-width: 1100px) {
-  .fonctionnementetapes {
-    flex-direction: column;
-  }
-
-  .footer {
-    padding: 0px;
-  }
-}
+/* Disposition grid page d'accueil version desktop*/
 /* styleheader*/
 .header {
   display: flex;
@@ -196,14 +173,15 @@ body {
 
 .fonctionnement {
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
 }
-.fonctionnement .fonctionnementtitle {
+
+.fonctionnementtitle {
   margin-left: 32px;
 }
-.fonctionnement .fonctionnementetapes {
-  display: flex;
-}
-.fonctionnement .fonctionnementtexte {
+
+.fonctionnementtexte {
   margin-left: 32px;
 }
 
@@ -227,15 +205,13 @@ body {
   padding-top: 45px;
   padding-bottom: 25px;
   background-color: #fafafa;
+  padding-left: 0;
+  padding-right: 0;
 }
 .restaurants .restaurantstitle {
   margin-left: 15px;
   font-family: roboto;
   font-weight: 1000;
-}
-.restaurants .cartecontainer {
-  display: flex;
-  flex-direction: column;
 }
 
 .restaurantlegend {
@@ -252,7 +228,6 @@ body {
   background-color: #fafafa;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
-  margin-top: -60px;
   position: relative;
 }
 .menu .menuheader {
@@ -274,8 +249,7 @@ body {
   margin: auto;
 }
 .menu .menucontainer {
-  display: flex;
-  flex-direction: column;
+  display: block;
 }
 .menu .entrées {
   flex: 31%;
@@ -328,4 +302,61 @@ body {
 }
 .footer .list2 {
   margin-right: 4px;
+}
+
+@media all and (min-width: 950px) {
+  .restaurants {
+    margin-left: 175px;
+    margin-right: 175px;
+  }
+
+  .restaurants .restaurantstitle {
+    margin-left: 55px;
+  }
+
+  .menu {
+    margin-left: 175px;
+    margin-right: 175px;
+  }
+
+  .menu .menucontainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cartecontainer {
+    display: grid;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .carte1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .carte2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .carte3 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .carte4 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .fonctionnement {
+    margin-left: 175px;
+    margin-right: 175px;
+  }
+
+  .fonctionnementetapes {
+    display: flex;
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=style.css.map */
