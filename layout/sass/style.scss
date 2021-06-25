@@ -2,20 +2,23 @@
 @import "/Users/chips/Desktop/AntoineChirat_3_15062021/utils/_mixin.scss";
 @import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/composants/_bouton.scss";
 @import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/composants/_icones.scss";
+@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/composants/_cartes.scss";
 @import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/mobileandtablet.scss";
+
 /* styleheader*/
 .header{
     display: flex;
     text-align: center;
+    padding-top:15px;
+    padding-bottom:15px;
     i{
     margin: auto;
-    padding-left: 15px;
+    padding-left: 40px;
     }
 }
 
 .logo{
     font-family: Shrikhand;
-    font-size: 2.5em;
     flex-basis: 100%;
     margin: auto;
 }
@@ -46,7 +49,7 @@ body{
     padding: .75rem 1.5rem;
     .exploretitle{
         text-align: center;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
     .exploretext{
         text-align: center;
@@ -56,26 +59,18 @@ body{
 
 .fonctionnement{
     margin-top:30px;
+    padding-left: 170px;
+    padding-right: 170px;
     .fonctionnementtitle{
         margin-left: 32px;
     }
     .fonctionnementetapes{
         display: flex;
     }
-    .fonctionnementcarte{
-        background-color: $background;
-        @include cardradiusandshadow();
-        padding: .75rem 1.5rem;
-        margin-bottom: 20px;
-        flex: 30%;
-        margin-right: 25px;
-    }
     .fonctionnementtexte{
             margin-left: 32px;
     }
 }
-
-
 
 .carteimage{
     @include photoradius();
@@ -94,91 +89,69 @@ body{
     padding-top:45px;
     padding-bottom:25px;
     background-color: $background;
+    padding-left: 175px;
+    padding-right: 175px;
     .restaurantstitle{
         margin-left: 15px;
         font-family:roboto ;
+        font-weight: 1000;
+    }
+    .cartecontainer{
+        display:grid;
     }
 }
 
-.restaurantcartes{
-    @include cardradiusandshadow();
-    margin-bottom: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-    transform:scale(1);
-    transition-property: transform;
-    transition-duration: 500ms;
-    .carte{
-        text-decoration:none;
-    }
-    &:hover{
-        transform: scale(1.03);
-    }
-    footer{
-        display: grid;
-        margin-left: 10px;
-        margin-right: 10px;
-        padding: 10px;
-    }
-    h3{
-        margin: 0;
-    }
-    .restaurantquartier{
-        grid-column: 1;
-    }
-    .favorite{
-        grid-column: 2;
-        text-align: right;
-    }
-}
 
 .restaurantlegend{
     @include nouveauattribute();
-}
-
-.foodcard{
-    @include cardradiusandshadow();
-    background-color: white;
-    display: grid;
-    padding:10px;
-    margin-bottom: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
-    .foodcardtitle{
-        margin:0;
-    }
-    .foodcarddescription{
-        grid-column: 1;
-        margin-bottom: 0;
-    }
-    .foodcardprice{
-        grid-column: 2;
-        text-align: right;
-        margin-bottom: 0;
-    }
 }
 
 .menu{
     background-color: $background;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
-    margin-top: -35px;
+    margin-top: -60px;
+    margin-left: 175px;
+    margin-right: 175px;
     position: relative;
     .menuheader{
         font-family: Shrikhand;
         font-size: 1.5em;
-    }
-    .menuheader{
+        padding-top: 25px;
         display: flex;
     }
     .menutitle{
-        flex-basis: 70%;
+        flex-basis: 95%;
         font-size: 1.24em;
         margin-left: 32px;
+    }
+    .menuicone{
+        flex-basis: 5%;
+        margin-right: 10px;
     }
     i{
         margin: auto;
     }
+    .menucontainer{
+        display: flex;
+    }
+        .entrées{
+            flex: 31%;
+            margin: auto;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .plats{
+            flex: 32%;
+            margin: auto;
+        }
+        .dessert{
+            flex: 31%;
+            margin: auto;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        
 }
 
 .foodtitle{
@@ -195,11 +168,13 @@ body{
 
 /* stylefooter*/
 .footer{
-    background-color: black;
+    background-color: #353535;
     color: white;
+    padding-left: 150px;
     .footercontent{
         padding-top: 15px;
         padding-bottom: 15px;
+        font-weight: 100;
     }
     .footerlogo{
         font-family: Shrikhand;
@@ -216,8 +191,11 @@ body{
     li{
         margin-bottom: 5px;
     }
-    i{
-        margin-right:10px;
+    .list1{
+        margin-right :12px;
+    }
+    .list2{
+        margin-right: 4px;
     }
 }
 

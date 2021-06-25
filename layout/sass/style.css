@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Colors*/
 /* */
 /* */
@@ -17,7 +18,9 @@
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
+  margin-bottom: 15px;
   border: none;
+  font-weight: 600;
 }
 
 .commanderbtn {
@@ -34,6 +37,105 @@
   width: fit-content;
   margin: auto;
   border: none;
+  font-weight: 600;
+}
+
+.fonctionnementcarte {
+  background-color: #fafafa;
+  border-radius: 20px;
+  box-shadow: 0px 5px 12px -4px rgba(145, 145, 145, 0.73);
+  padding: 1.5rem 1.5rem;
+  margin-bottom: 20px;
+  flex: 30%;
+  margin-right: 25px;
+  position: relative;
+}
+
+.foodcard {
+  border-radius: 20px;
+  box-shadow: 0px 5px 12px -4px rgba(145, 145, 145, 0.73);
+  background-color: white;
+  display: grid;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.foodcard .foodcardtitle {
+  margin: 0;
+  margin-bottom: -10px;
+  margin-left: 5px;
+  font-weight: 1000;
+  font-size: 1em;
+}
+.foodcard .foodcarddescription {
+  grid-column: 1;
+  margin-bottom: 0;
+  margin-left: 5px;
+  font-size: 0.9em;
+  font-weight: 100;
+}
+.foodcard .foodcardprice {
+  margin-right: 5px;
+  margin-bottom: 0;
+  grid-column: 2;
+  text-align: right;
+  font-weight: 1000;
+}
+
+.restaurantcartes {
+  border-radius: 20px;
+  box-shadow: 0px 5px 12px -4px rgba(145, 145, 145, 0.73);
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 500ms;
+}
+.restaurantcartes .carte {
+  text-decoration: none;
+}
+.restaurantcartes:hover {
+  transform: scale(1.03);
+}
+.restaurantcartes footer {
+  display: grid;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  color: black;
+}
+.restaurantcartes h3 {
+  margin: 0;
+}
+.restaurantcartes .restaurantquartier {
+  grid-column: 1;
+}
+.restaurantcartes .favorite {
+  grid-column: 2;
+  text-align: right;
+}
+
+/* Disposition grid page d'accueil version desktop*/
+.carte1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.carte2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.carte3 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.carte4 {
+  grid-column: 2;
+  grid-row: 2;
 }
 
 @media (max-width: 1100px) {
@@ -45,15 +147,16 @@
 .header {
   display: flex;
   text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .header i {
   margin: auto;
-  padding-left: 15px;
+  padding-left: 40px;
 }
 
 .logo {
   font-family: Shrikhand;
-  font-size: 2.5em;
   flex-basis: 100%;
   margin: auto;
 }
@@ -86,7 +189,7 @@ body {
 }
 .explore .exploretitle {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 .explore .exploretext {
   text-align: center;
@@ -95,21 +198,14 @@ body {
 
 .fonctionnement {
   margin-top: 30px;
+  padding-left: 170px;
+  padding-right: 170px;
 }
 .fonctionnement .fonctionnementtitle {
   margin-left: 32px;
 }
 .fonctionnement .fonctionnementetapes {
   display: flex;
-}
-.fonctionnement .fonctionnementcarte {
-  background-color: #fafafa;
-  border-radius: 20px;
-  box-shadow: 0px 5px 12px -4px rgba(145, 145, 145, 0.73);
-  padding: 0.75rem 1.5rem;
-  margin-bottom: 20px;
-  flex: 30%;
-  margin-right: 25px;
 }
 .fonctionnement .fonctionnementtexte {
   margin-left: 32px;
@@ -135,43 +231,16 @@ body {
   padding-top: 45px;
   padding-bottom: 25px;
   background-color: #fafafa;
+  padding-left: 175px;
+  padding-right: 175px;
 }
 .restaurants .restaurantstitle {
   margin-left: 15px;
   font-family: roboto;
+  font-weight: 1000;
 }
-
-.restaurantcartes {
-  border-radius: 20px;
-  box-shadow: 0px 5px 12px -4px rgba(145, 145, 145, 0.73);
-  margin-bottom: 50px;
-  margin-left: 10px;
-  margin-right: 10px;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 500ms;
-}
-.restaurantcartes .carte {
-  text-decoration: none;
-}
-.restaurantcartes:hover {
-  transform: scale(1.03);
-}
-.restaurantcartes footer {
+.restaurants .cartecontainer {
   display: grid;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 10px;
-}
-.restaurantcartes h3 {
-  margin: 0;
-}
-.restaurantcartes .restaurantquartier {
-  grid-column: 1;
-}
-.restaurantcartes .favorite {
-  grid-column: 2;
-  text-align: right;
 }
 
 .restaurantlegend {
@@ -184,50 +253,51 @@ body {
   right: 0.75rem;
 }
 
-.foodcard {
-  border-radius: 20px;
-  box-shadow: 0px 5px 12px -4px rgba(145, 145, 145, 0.73);
-  background-color: white;
-  display: grid;
-  padding: 10px;
-  margin-bottom: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.foodcard .foodcardtitle {
-  margin: 0;
-}
-.foodcard .foodcarddescription {
-  grid-column: 1;
-  margin-bottom: 0;
-}
-.foodcard .foodcardprice {
-  grid-column: 2;
-  text-align: right;
-  margin-bottom: 0;
-}
-
 .menu {
   background-color: #fafafa;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
-  margin-top: -35px;
+  margin-top: -60px;
+  margin-left: 175px;
+  margin-right: 175px;
   position: relative;
 }
 .menu .menuheader {
   font-family: Shrikhand;
   font-size: 1.5em;
-}
-.menu .menuheader {
+  padding-top: 25px;
   display: flex;
 }
 .menu .menutitle {
-  flex-basis: 70%;
+  flex-basis: 95%;
   font-size: 1.24em;
   margin-left: 32px;
 }
+.menu .menuicone {
+  flex-basis: 5%;
+  margin-right: 10px;
+}
 .menu i {
   margin: auto;
+}
+.menu .menucontainer {
+  display: flex;
+}
+.menu .entrées {
+  flex: 31%;
+  margin: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.menu .plats {
+  flex: 32%;
+  margin: auto;
+}
+.menu .dessert {
+  flex: 31%;
+  margin: auto;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .foodtitle {
@@ -243,12 +313,14 @@ body {
 /* stylemain*/
 /* stylefooter*/
 .footer {
-  background-color: black;
+  background-color: #353535;
   color: white;
+  padding-left: 150px;
 }
 .footer .footercontent {
   padding-top: 15px;
   padding-bottom: 15px;
+  font-weight: 100;
 }
 .footer .footerlogo {
   font-family: Shrikhand;
@@ -265,6 +337,9 @@ body {
 .footer li {
   margin-bottom: 5px;
 }
-.footer i {
-  margin-right: 10px;
+.footer .list1 {
+  margin-right: 12px;
+}
+.footer .list2 {
+  margin-right: 4px;
 }/*# sourceMappingURL=style.css.map */
