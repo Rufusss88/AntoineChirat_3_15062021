@@ -1,8 +1,11 @@
-
 @media all and (min-width: 950px) {
+    main .restaurants{
+        padding-left: 112px;
+        padding-right: 112px;
+    }
 
     .restaurants .restaurantstitle{
-        margin-left:55px;
+        margin-left:61px;
     }
 
     .menu{
@@ -28,35 +31,43 @@
     .carte1{
         grid-column: 1;
         grid-row: 1;
-        min-width: 500px;
-        max-width: 500px;
+        min-width: 300px;
+        max-width: 750px;
     }
 
     .carte2{
         grid-column: 2;
         grid-row: 1;
-        min-width: 500px;
-        max-width: 500px;
+        min-width: 300px;
+        max-width: 750px;
     }
 
     .carte3{
         grid-column: 1;
         grid-row: 2;
-        min-width: 500px;
-        max-width: 500px;
+        min-width: 300px;
+        max-width: 750px;
     }
 
     .carte4{
         grid-column: 2;
         grid-row: 2;
-        min-width: 500px;
-        max-width: 500px;
+        min-width: 300px;
+        max-width: 750px;
     }
 
+    .fonctionnement{
+        padding-left: 133px;
+        padding-right: 147px;
+    }
 
     .fonctionnementetapes {
         display: flex;
         flex-direction: row;
   
     }
-  }
+
+    .footer{
+        padding-left:145px;
+    }
+}

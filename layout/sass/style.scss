@@ -11,7 +11,7 @@
     padding-top:15px;
     padding-bottom:15px;
     i{
-    padding-left: 15px;
+    padding-left: 35px;
     }
 }
 
@@ -41,6 +41,7 @@ body{
     text-align: center;
     background-color: #f3f3f3;
     padding: .75rem 1.5rem;
+    background-color: #f3f3f3;
     span{
         margin-left: 10px;
         font-size: 0.8em;
@@ -120,7 +121,7 @@ body{
     .menutitle{
         flex-basis: 95%;
         font-size: 1em;
-        margin-left: 20px;
+        margin-left:14px;
     }
     .menuicone{
         flex-basis: 5%;
@@ -147,6 +148,18 @@ body{
 
 .foodtitle{
     margin-left: 15px;
+    position: relative;
+    padding-bottom: .5rem;
+}
+
+.foodtitle:after{
+    content: "";
+    width: 3rem;
+    height: .25rem;
+    background-color: $tertiary;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .commander{
@@ -176,6 +189,9 @@ body{
     }
     ul{
         list-style: none;
+    }
+    a{
+        text-decoration: none;
     }
     li{
         margin-bottom: 5px;
