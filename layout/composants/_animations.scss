@@ -7,12 +7,11 @@
     }
 }
 
-.explorebtn{
-    transition-duration: .25s;
+.explore__button{
     &:hover{
-        opacity: 80%;
-        box-shadow: 25px black;
-        box-shadow: 4px 4px 10px rgb(0 0 0 / 50%);
+        background-color: lighten($color: #b625a7, $amount: 10%);
+        border: 1px  groove white;
+        box-shadow: 2px 2px 5px rgb(0 0 0 / 50%);
     }
 }
 
@@ -61,4 +60,58 @@ main{
     }
 }
 
+@keyframes animationfoodcard {
+    0% {
+        opacity: 0;
+        color: white;
+    }
+    20%{
+        opacity: 0.4;
+        color: darken($color: white, $amount: 20%);
+    }
+    40%{
+        opacity: 0.5;
+        color: darken($color: white, $amount: 40%);
+    }
+    60%{
+        opacity: 0.6;
+        color: darken($color: white, $amount: 40%);
+    }
+    80%{
+        opacity: 0.7;
+        color: darken($color: white, $amount: 80%);
+    }
+    100%{
+        opacity: 1;
+        color: black;
+    }
+}
 
+@keyframes animationiconecercle {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }   
+}
+
+/*Keyframes test pour améliorer l'animation sur le coeur*/
+@keyframes animationheartempty {
+    0% {
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+@keyframes animationheartfull {
+    0% {
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+/*Keyframes test pour améliorer l'animation sur le coeur*/

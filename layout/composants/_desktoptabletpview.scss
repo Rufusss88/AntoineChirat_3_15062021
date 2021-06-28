@@ -8,64 +8,58 @@
         padding-right: 112px;
     }
 
-    .restaurants .restaurantstitle{
-        margin-left:61px;
+    .restaurants__title{
+        text-align: center;
     }
 
     .menu{
         @include margindesktop;
-    }
-
-    .menu .menutitle{
-        font-size:1.24em;
-        margin-left: 32px;
-    }
-
-    .menu .menucontainer{
-        display: flex;
-        flex-direction: row;
+        &__title{
+            font-size:1.24em;
+            margin-left: 32px;
+        }
+        &__container{
+            display: flex;
+            flex-direction: row;
+        }
     }
 
     .restaurants__cartecontainer{
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
         margin-left: 50px;
         margin-right: 50px;
+        justify-content: center;
     }
 
     .carte1{
-        grid-column: 1;
-        grid-row: 1;
-        min-width: 300px;
-        max-width: 750px;
+        min-width: 525px;
+        max-width: 525px;
     }
 
     .carte2{
-        grid-column: 2;
-        grid-row: 1;
-        min-width: 300px;
-        max-width: 750px;
+        min-width: 525px;
+        max-width: 525px;
     }
 
     .carte3{
-        grid-column: 1;
-        grid-row: 2;
-        min-width: 300px;
-        max-width: 750px;
+        min-width: 525px;
+        max-width: 525px;
     }
 
     .carte4{
-        grid-column: 2;
-        grid-row: 2;
-        min-width: 300px;
-        max-width: 750px;
+        min-width: 525px;
+        max-width: 525px;
     }
 
     .fonctionnement{
         padding-left: 133px;
         padding-right: 147px;
+        text-align: center;
+        align-items: center;
         &__etapes {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         }   
     }
 

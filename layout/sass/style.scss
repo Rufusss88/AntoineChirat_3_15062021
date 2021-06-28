@@ -35,6 +35,8 @@ body{
 }
 
 .localisation{
+    display: flex;
+    justify-content: center;
     font-weight: 600;
     font-size: 1.3rem;
     text-align: center;
@@ -69,20 +71,12 @@ body{
         &__title{
         margin-left: 32px;
         }
-        &__fonctionnementtexte{
+        &__texte{
         margin-left: 32px;
         }
 }
 
-
-.restaurant__carteimage{
-    @include photoradius();
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.backgroundpicture{
+.background__picture{
     width: 100%;
     height: 320px;
     object-fit: cover;
@@ -95,12 +89,26 @@ body{
     padding-left: 0;
     padding-right: 0;
     &__title{
-        margin-left: 15px;
+        margin-left:32px;
         font-family:roboto ;
         font-weight: 1000;
     }
     &__legend{
         @include nouveauattribute();
+    }
+    &__carteimage{
+        @include photoradius();
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    &__menufavorite{
+        display: grid;
+        grid-column: 2;
+        grid-row: 1/2;
+        text-align: right;
+        flex-basis: 5%;
+        margin-right: 10px;
     }
 }
 
@@ -110,64 +118,62 @@ body{
     border-top-right-radius: 35px;
     position: relative;
     margin-top: -65px;
-    .menuheader{
+    &__header{
         font-family: Shrikhand;
         font-size: 1.5em;
-        padding-top: 25px;
+        padding-top: 22px;
         display: flex;
     }
-    .menutitle{
+    &__title{
+        font-family: Shrikhand;
         flex-basis: 95%;
         font-size: 1em;
         margin-left:14px;
     }
-    i{
+    &__favorite{
+        margin-right:10px;
+        display: grid;
+        grid-column: 2;
+        grid-row: 1/2;
+        text-align: right;
+        flex-basis: 5%;
+        margin-right: 10px;
+    }
+    &__icone{
         margin: auto;
     }
-    .menucontainer{
-        display: block;
-        
+    &__container{
+        display: block 
     }
-        .entrées{
-            flex: 31%;
+    &__entrées{
+            flex-basis: 31%;
             animation: animationfoodcard 100ms linear 1ms 1 normal forwards;
         }
-        .plats{
-            flex: 32%;
+    &__plats{
+            flex-basis: 32%;
             opacity: 0;
             animation: animationfoodcard 100ms linear 200ms  normal forwards;
         }
-        .dessert{
-            flex: 31%;
+    &__dessert{
+            flex-basis: 31%;
             opacity: 0;
             animation: animationfoodcard 100ms linear 400ms  normal forwards;
-        }
-        
-}
-
-.restaurant__menuicone{
-    display: grid;
-    grid-column: 2;
-    grid-row: 1/2;
-    text-align: right;
-    flex-basis: 5%;
-    margin-right: 10px;
+        }   
 }
 
 .foodtitle{
     margin-left: 15px;
     position: relative;
     padding-bottom: .5rem;
-}
-
-.foodtitle:after{
-    content: "";
-    width: 3rem;
-    height: .25rem;
-    background-color: $tertiary;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    &:after{
+        content: "";
+        width: 3rem;
+        height: .25rem;
+        background-color: $tertiary;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
 }
 
 .commander{

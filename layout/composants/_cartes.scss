@@ -14,6 +14,10 @@
     flex: 30%;
     margin-right: 25px;
     position: relative;
+    &:hover{
+        background-color: lighten($background, $amount: 10%);
+        border: 1px solid grey;
+    }
 }
 
 .fonctionnement__carte::after{
@@ -31,66 +35,39 @@
     left: -.75rem;
 }
 
-@keyframes animationfoodcard {
-    0% {
-        opacity: 0;
-        color: white;
-    }
-    20%{
-        opacity: 0.4;
-        color: darken($color: white, $amount: 20%);
-    }
-    40%{
-        opacity: 0.5;
-        color: darken($color: white, $amount: 40%);
-    }
-    60%{
-        opacity: 0.6;
-        color: darken($color: white, $amount: 40%);
-    }
-    80%{
-        opacity: 0.7;
-        color: darken($color: white, $amount: 80%);
-    }
-    100%{
-        opacity: 1;
-        color: black;
-    }
-}
-
 .foodcard{
-    @include cardradiusandshadow();
-    cursor: pointer;
-    background-color: #fff;
-    display: flex;
-    opacity: 1;
-    flex-direction: row;
-    margin-bottom: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
-    .foodtext{
-        flex-basis: 70%;
-    }
-    .foodcardtitle{
-        margin:0;
-        margin-bottom: -8px;
-        margin-left: 5px;
-        font-weight: 1000;
-        font-size: 1em; 
-    }
-    .foodcarddescription{
-        margin-bottom: 0;
-        margin-left: 5px;
-        font-size: 0.9em;
-        font-weight: 100;  
-    }
-    .foodcardprice{
-        margin-right: 5px;
-        margin-bottom: 0;
-        text-align: right;
-        font-weight: 1000;
-        flex-basis: 30%;
-    }
+        @include cardradiusandshadow();
+        cursor: pointer;
+        background-color: #fff;
+        display: flex;
+        opacity: 1;
+        flex-direction: row;
+        margin-bottom: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+            &__text{
+            flex-basis: 90%;
+        }
+            &__title{
+            margin:0;
+            margin-bottom: -8px;
+            margin-left: 5px;
+            font-weight: 1000;
+            font-size: 1em; 
+        }
+            &__description{
+            margin-bottom: 0;
+            margin-left: 5px;
+            font-size: 0.9em;
+            font-weight: 100;  
+        }
+            &__price{
+            margin-right: 5px;
+            margin-bottom: 0;
+            text-align: right;
+            font-weight: 1000;
+            flex-basis: 30%;
+        }
     .checkcircle{
         display: flex;
         background-color: #99E2D0;
@@ -99,50 +76,27 @@
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
         opacity: 1;
-        animation: animationdivcercle 1s ease 0s 1 normal both;
-        overflow: hidden;
     } 
 }
 
-.iconecercle{
-    transform-origin: center;
-    &:hover{
-        animation: animationiconecercle 1s ease 0s 1 normal both;
-    } 
-}
-
-@keyframes animationiconecercle {
-    0%{
-        transform: rotate(0deg);
-        opacity: 0;
-        transform: scale(1);
-    }
-    100%{
-        transform: rotate(360deg);
-        opacity: 1;
-        transform: scale(1.25);
-    }   
-}
-
-.restaurantcartes{
+.restaurant__cartes{
     @include cardradiusandshadow();
-    cursor: pointer;
     margin-bottom: 50px;
     margin-left: 10px;
     margin-right: 10px;
     transform:scale(1);
     transition-property: transform;
     transition-duration: 500ms;
-    .carte{
-        text-decoration:none;
-    }
-    &:hover{
-        transform: scale(1.03);
-    }
+    cursor: pointer;
+    .restaurant__carteslink{
+            text-decoration:none;
+                &:hover{
+                transform: scale(1.03);
+                }
+            }
     footer{
         display: grid;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 5px;
         padding: 10px;
         color: black;
     }
