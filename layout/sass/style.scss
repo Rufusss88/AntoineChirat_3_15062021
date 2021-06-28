@@ -11,22 +11,19 @@
     text-align: center;
     padding-top:15px;
     padding-bottom:15px;
-    i{
-    padding-left: 35px;
-    }
+        &__icon{
+            margin-left: 10px;
+        }
+        &__logo{
+            font-family: Shrikhand;
+            flex-basis: 100%;
+            margin: auto;
+            margin-right: 20px;
+        }
+        &__logoindex{
+            margin-right: -7px;
+        }
 }
-
-.logo{
-    font-family: Shrikhand;
-    flex-basis: 100%;
-    margin: auto;
-    margin-right: 20px;
-}
-
-.logoindex{
-    margin-right: -7px;
-}
-
 /* styleheader*/
 
 /* style main*/
@@ -44,7 +41,7 @@ body{
     background-color: #f3f3f3;
     padding: .75rem 1.5rem;
     background-color: #f3f3f3;
-    span{
+    &__text{
         margin-left: 10px;
         font-size: 0.8em;
     }
@@ -55,11 +52,11 @@ body{
     flex-direction: column;
     background-color: $background;
     padding: .75rem 1.5rem;
-    .exploretitle{
+    &__title{
         text-align: center;
         font-size: 1.4rem;
     }
-    .exploretext{
+    &__text{
         text-align: center;
         font-weight: 100;
     }
@@ -69,16 +66,16 @@ body{
     margin-top:30px;
     display: flex;
     flex-direction: column;
-        .fonctionnementtitle{
+        &__title{
         margin-left: 32px;
         }
-        .fonctionnementtexte{
+        &__fonctionnementtexte{
         margin-left: 32px;
         }
 }
 
 
-.carteimage{
+.restaurant__carteimage{
     @include photoradius();
     width: 100%;
     height: 200px;
@@ -91,21 +88,20 @@ body{
     object-fit: cover;
 }
 
-.restaurants{
+.restaurant{
     padding-top:45px;
     padding-bottom:25px;
     background-color: $background;
     padding-left: 0;
     padding-right: 0;
-    .restaurantstitle{
+    &__title{
         margin-left: 15px;
         font-family:roboto ;
         font-weight: 1000;
     }
-}
-
-.restaurantlegend{
-    @include nouveauattribute();
+    &__legend{
+        @include nouveauattribute();
+    }
 }
 
 .menu{
@@ -149,7 +145,7 @@ body{
         
 }
 
-.menuicone{
+.restaurant__menuicone{
     display: grid;
     grid-column: 2;
     grid-row: 1/2;
@@ -185,21 +181,21 @@ body{
 .footer{
     background-color: #353535;
     color: white;
-    .footercontent{
+    &__content{
         padding-top: 15px;
         padding-bottom: 15px;
         font-weight: 100;
     }
-    .footerlogo{
+    &__logo{
         font-family: Shrikhand;
         flex-basis: 100%;
         margin-left: 32px;
     }
-    h3{
+    &__title{
         font-family: Shrikhand;
         margin-left: 32px;
     }
-    ul{
+    &__link{
         list-style: none;
     }
     a{
@@ -215,10 +211,10 @@ body{
             border-color:white;
         }
     }
-    .list1{
+    &__list1{
         margin-right :12px;
     }
-    .list2{
+    &__list2{
         margin-right: 4px;
     }
 }

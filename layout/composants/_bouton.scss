@@ -1,5 +1,5 @@
 /*style boutons*/
-.explorebutton{
+.explore__button{
     @include cardradiusandshadow();
     @include buttonlayout();
     width: fit-content;

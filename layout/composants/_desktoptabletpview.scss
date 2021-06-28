@@ -26,7 +26,7 @@
         flex-direction: row;
     }
 
-    .cartecontainer{
+    .restaurants__cartecontainer{
         display: grid;
         margin-left: 50px;
         margin-right: 50px;
@@ -63,12 +63,10 @@
     .fonctionnement{
         padding-left: 133px;
         padding-right: 147px;
-    }
-
-    .fonctionnementetapes {
+        &__etapes {
         display: flex;
         flex-direction: row;
-  
+        }   
     }
 
     .footer{
