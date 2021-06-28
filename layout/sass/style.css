@@ -89,9 +89,55 @@
   opacity: 100%;
 }
 
+@-webkit-keyframes animationheartempty {
+  0% {
+    opacity: 1;
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: 2;
+  }
+}
+
+@keyframes animationheartempty {
+  0% {
+    opacity: 1;
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: 2;
+  }
+}
+@-webkit-keyframes animationheartfull {
+  0% {
+    opacity: 0;
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+  }
+}
+@keyframes animationheartfull {
+  0% {
+    opacity: 0;
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+  }
+}
 .iconback {
   font-size: 20px;
   margin-top: 12px;
+}
+
+.iconecercle {
+  background-color: #99E2D0;
+  color: white;
 }
 
 /* style carte*/
@@ -128,26 +174,82 @@
   left: -0.75rem;
 }
 
+@-webkit-keyframes animationfoodcard {
+  0% {
+    opacity: 0;
+    color: white;
+  }
+  20% {
+    opacity: 0.4;
+    color: #cccccc;
+  }
+  40% {
+    opacity: 0.5;
+    color: #999999;
+  }
+  60% {
+    opacity: 0.6;
+    color: #999999;
+  }
+  80% {
+    opacity: 0.7;
+    color: #333333;
+  }
+  100% {
+    opacity: 1;
+    color: black;
+  }
+}
+
+@keyframes animationfoodcard {
+  0% {
+    opacity: 0;
+    color: white;
+  }
+  20% {
+    opacity: 0.4;
+    color: #cccccc;
+  }
+  40% {
+    opacity: 0.5;
+    color: #999999;
+  }
+  60% {
+    opacity: 0.6;
+    color: #999999;
+  }
+  80% {
+    opacity: 0.7;
+    color: #333333;
+  }
+  100% {
+    opacity: 1;
+    color: black;
+  }
+}
 .foodcard {
   border-radius: 20px;
   box-shadow: 0px 5px 12px -4px rgba(145, 145, 145, 0.73);
   cursor: pointer;
   background-color: #fff;
-  display: grid;
-  padding: 10px;
+  display: flex;
+  opacity: 1;
+  flex-direction: row;
   margin-bottom: 15px;
   margin-left: 10px;
   margin-right: 10px;
 }
+.foodcard .foodtext {
+  flex-basis: 70%;
+}
 .foodcard .foodcardtitle {
   margin: 0;
-  margin-bottom: -10px;
+  margin-bottom: -8px;
   margin-left: 5px;
   font-weight: 1000;
   font-size: 1em;
 }
 .foodcard .foodcarddescription {
-  grid-column: 1;
   margin-bottom: 0;
   margin-left: 5px;
   font-size: 0.9em;
@@ -156,11 +258,66 @@
 .foodcard .foodcardprice {
   margin-right: 5px;
   margin-bottom: 0;
-  grid-column: 2;
   text-align: right;
   font-weight: 1000;
+  flex-basis: 30%;
+}
+.foodcard .checkcircle {
+  display: flex;
+  background-color: #99E2D0;
+  height: 43px;
+  width: 67px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  opacity: 1;
+  -webkit-animation: animationdivcercle 2s ease 0s 1 normal both;
+          animation: animationdivcercle 2s ease 0s 1 normal both;
+  overflow: hidden;
 }
 
+.iconecercle {
+  transform-origin: center;
+}
+.iconecercle:hover {
+  -webkit-animation: animationiconecercle 1s ease 0s 1 normal both;
+          animation: animationiconecercle 1s ease 0s 1 normal both;
+}
+
+@-webkit-keyframes animationiconecercle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animationiconecercle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes animationdivcercle {
+  0% {
+    opacity: 1;
+    transform: slide;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animationdivcercle {
+  0% {
+    opacity: 1;
+    transform: slide;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .restaurantcartes {
   border-radius: 20px;
   box-shadow: 0px 5px 12px -4px rgba(145, 145, 145, 0.73);
@@ -421,12 +578,20 @@ body {
 }
 .menu .entrées {
   flex: 31%;
+  -webkit-animation: animationfoodcard 100ms linear 1ms 1 normal forwards;
+          animation: animationfoodcard 100ms linear 1ms 1 normal forwards;
 }
 .menu .plats {
   flex: 32%;
+  opacity: 0;
+  -webkit-animation: animationfoodcard 100ms linear 200ms normal forwards;
+          animation: animationfoodcard 100ms linear 200ms normal forwards;
 }
 .menu .dessert {
   flex: 31%;
+  opacity: 0;
+  -webkit-animation: animationfoodcard 100ms linear 400ms normal forwards;
+          animation: animationfoodcard 100ms linear 400ms normal forwards;
 }
 
 .menuicone {

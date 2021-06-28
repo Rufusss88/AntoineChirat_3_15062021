@@ -134,12 +134,17 @@ body{
     }
         .entrées{
             flex: 31%;
+            animation: animationfoodcard 100ms linear 1ms 1 normal forwards;
         }
         .plats{
             flex: 32%;
+            opacity: 0;
+            animation: animationfoodcard 100ms linear 200ms  normal forwards;
         }
         .dessert{
             flex: 31%;
+            opacity: 0;
+            animation: animationfoodcard 100ms linear 400ms  normal forwards;
         }
         
 }
