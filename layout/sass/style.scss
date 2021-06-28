@@ -3,6 +3,7 @@
 @import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/composants/_bouton.scss";
 @import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/composants/_icones.scss";
 @import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/composants/_cartes.scss";
+@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/composants/_animations.scss";
 
 /* styleheader*/
 .header{
@@ -123,10 +124,6 @@ body{
         font-size: 1em;
         margin-left:14px;
     }
-    .menuicone{
-        flex-basis: 5%;
-        margin-right: 10px;
-    }
     i{
         margin: auto;
     }
@@ -144,6 +141,15 @@ body{
             flex: 31%;
         }
         
+}
+
+.menuicone{
+    display: grid;
+    grid-column: 2;
+    grid-row: 1/2;
+    text-align: right;
+    flex-basis: 5%;
+    margin-right: 10px;
 }
 
 .foodtitle{

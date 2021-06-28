@@ -6,6 +6,7 @@
 
 .fonctionnementcarte{
     display: flex;
+    cursor: pointer;
     background-color: $background;
     @include cardradiusandshadow();
     padding: 1.5rem 1.5rem;
@@ -32,7 +33,8 @@
 
 .foodcard{
     @include cardradiusandshadow();
-    background-color: white;
+    cursor: pointer;
+    background-color: #fff;
     display: grid;
     padding:10px;
     margin-bottom: 15px;
@@ -63,6 +65,7 @@
 
 .restaurantcartes{
     @include cardradiusandshadow();
+    cursor: pointer;
     margin-bottom: 50px;
     margin-left: 10px;
     margin-right: 10px;

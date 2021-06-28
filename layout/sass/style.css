@@ -13,8 +13,12 @@
   font-weight: 500;
   font-size: 1.1rem;
   color: white;
+  box-shadow: 3px black;
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   width: 300px;
+  opacity: 100%;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -31,8 +35,12 @@
   font-weight: 500;
   font-size: 1.1rem;
   color: white;
+  box-shadow: 3px black;
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   width: 300px;
+  opacity: 100%;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -44,6 +52,41 @@
 /*style boutons*/
 .iconheart {
   font-size: 30px;
+  cursor: pointer;
+}
+
+.emptyheart {
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 30px;
+  background-image: transparent;
+  display: block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: transparent;
+  grid-column: 1;
+  grid-row: 1;
+  opacity: 100%;
+}
+.emptyheart:active {
+  opacity: 0%;
+}
+
+.fullheart {
+  grid-column: 1;
+  grid-row: 1;
+  cursor: pointer;
+  font-size: 30px;
+  display: block;
+  color: #9c47fc;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 100%;
+}
+.fullheart:active {
+  opacity: 0%;
 }
 
 .iconback {
@@ -59,6 +102,7 @@
 
 .fonctionnementcarte {
   display: flex;
+  cursor: pointer;
   background-color: #fafafa;
   border-radius: 20px;
   box-shadow: 0px 5px 12px -4px rgba(145, 145, 145, 0.73);
@@ -87,7 +131,8 @@
 .foodcard {
   border-radius: 20px;
   box-shadow: 0px 5px 12px -4px rgba(145, 145, 145, 0.73);
-  background-color: white;
+  cursor: pointer;
+  background-color: #fff;
   display: grid;
   padding: 10px;
   margin-bottom: 15px;
@@ -119,6 +164,7 @@
 .restaurantcartes {
   border-radius: 20px;
   box-shadow: 0px 5px 12px -4px rgba(145, 145, 145, 0.73);
+  cursor: pointer;
   margin-bottom: 50px;
   margin-left: 10px;
   margin-right: 10px;
@@ -152,6 +198,24 @@
 }
 
 /* style carte*/
+.commanderbtn {
+  transition-duration: 0.25s;
+}
+.commanderbtn:hover {
+  opacity: 80%;
+  box-shadow: 25px black;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.explorebtn {
+  transition-duration: 0.25s;
+}
+.explorebtn:hover {
+  opacity: 80%;
+  box-shadow: 25px black;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
 /* styleheader*/
 .header {
   display: flex;
@@ -279,10 +343,6 @@ body {
   font-size: 1em;
   margin-left: 14px;
 }
-.menu .menuicone {
-  flex-basis: 5%;
-  margin-right: 10px;
-}
 .menu i {
   margin: auto;
 }
@@ -297,6 +357,15 @@ body {
 }
 .menu .dessert {
   flex: 31%;
+}
+
+.menuicone {
+  display: grid;
+  grid-column: 2;
+  grid-row: 1/2;
+  text-align: right;
+  flex-basis: 5%;
+  margin-right: 10px;
 }
 
 .foodtitle {
