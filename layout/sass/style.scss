@@ -34,6 +34,7 @@ body{
     font-family: roboto;
     margin:0px;
     width: 100%;
+    z-index: 2;
 }
 
 .localisation{
@@ -218,5 +219,5 @@ body{
 }
 
 /* styledesktop*/
-@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/composants/_desktopview.scss";
+@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/composants/_desktoptabletpview.scss";
 /* styledesktop*/

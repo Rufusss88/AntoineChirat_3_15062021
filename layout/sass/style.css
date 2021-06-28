@@ -64,9 +64,8 @@
   transition: all 0.3s ease;
   cursor: pointer;
   background: transparent;
-  grid-column: 1;
-  grid-row: 1;
   opacity: 100%;
+  transition: transform 1000ms ease-in-out;
 }
 .emptyheart:active {
   opacity: 0%;
@@ -83,10 +82,11 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 100%;
+  opacity: 0%;
+  transition: transform 1000ms ease-in-out;
 }
 .fullheart:active {
-  opacity: 0%;
+  opacity: 100%;
 }
 
 .iconback {
@@ -216,6 +216,75 @@
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+.loadingspinnercontainer {
+  width: 100%;
+  max-height: 1552px;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.8;
+  -webkit-animation: animationspinner 300ms linear 1s 1 normal forwards;
+          animation: animationspinner 300ms linear 1s 1 normal forwards;
+}
+
+.spinner {
+  top: 44%;
+  left: 25%;
+  background-color: transparent;
+  position: fixed;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  opacity: 1;
+  -webkit-animation: animationspinner 300ms linear 100s 1s normal forwards;
+          animation: animationspinner 300ms linear 100s 1s normal forwards;
+}
+
+main {
+  opacity: 0.5;
+  -webkit-animation: animationmain 300ms linear 1s 1 normal forwards;
+          animation: animationmain 300ms linear 1s 1 normal forwards;
+}
+
+@-webkit-keyframes animationspinner {
+  0% {
+    opacity: 0.8;
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: 2;
+  }
+}
+
+@keyframes animationspinner {
+  0% {
+    opacity: 0.8;
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: 2;
+  }
+}
+@-webkit-keyframes animationmain {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animationmain {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* styleheader*/
 .header {
   display: flex;
@@ -244,6 +313,7 @@ body {
   font-family: roboto;
   margin: 0px;
   width: 100%;
+  z-index: 2;
 }
 
 .localisation {
@@ -437,6 +507,11 @@ body {
 
 /* styledesktop*/
 @media all and (min-width: 950px) {
+  .spinner {
+    top: 43%;
+    left: 44%;
+  }
+
   main .restaurants {
     padding-left: 112px;
     padding-right: 112px;
@@ -507,6 +582,12 @@ body {
 
   .footer {
     padding-left: 145px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 950px) {
+  .spinner {
+    top: 30%;
+    left: 40%;
   }
 }
 /* styledesktop*//*# sourceMappingURL=style.css.map */

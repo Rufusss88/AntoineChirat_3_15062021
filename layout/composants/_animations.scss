@@ -16,3 +16,47 @@
     }
 }
 
+.loadingspinnercontainer{
+    width: 100%;
+    max-height: 1552px;
+    position: absolute;
+    z-index: 3;
+    opacity: 0.8;
+    animation: animationspinner 300ms linear 1s 1 normal forwards;
+}
+
+.spinner{
+    top: 44%;
+    left: 25%;
+    background-color: transparent;
+    position: fixed;
+    width: max-content;
+    height: max-content;
+    opacity: 1;
+    animation: animationspinner 300ms linear 100s 1s normal forwards;
+}
+
+main{
+    opacity: 0.5;
+    animation: animationmain 300ms linear 1s 1 normal forwards;
+}
+
+@keyframes animationspinner {
+    0% {
+        opacity: 0.8;
+        z-index: 3;
+    }
+    100%{
+        opacity: 0;
+        z-index: 2;
+    }
+}
+
+@keyframes animationmain {
+    0% {
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}

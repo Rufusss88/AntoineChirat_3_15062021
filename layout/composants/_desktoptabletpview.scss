@@ -1,4 +1,8 @@
 @media all and (min-width: 950px) {
+    .spinner{
+        top: 43%;
+        left: 44%;
+    }
     main .restaurants{
         padding-left: 112px;
         padding-right: 112px;
@@ -69,5 +73,12 @@
 
     .footer{
         padding-left:145px;
+    }
+}
+
+@media all and (min-width:768px) and (max-width:950px){
+    .spinner{
+        top: 30%;
+        left: 40%;
     }
 }
