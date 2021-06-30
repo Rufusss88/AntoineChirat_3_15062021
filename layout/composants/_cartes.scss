@@ -77,16 +77,18 @@
             margin-top: 30px;
             text-align: right;
             font-weight: 500;
-            flex-basis: 100%;
         }
-    .checkcircle{
-        display: none;
-        background-color: #99E2D0;
-        width: 67px;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-        opacity: 1;
-    } 
+            &__check{
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #99E2D0;
+            width: 125px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            opacity: 1;
+        } 
 }
 
 .restaurants__cartes{
