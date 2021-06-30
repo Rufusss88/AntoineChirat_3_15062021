@@ -18,7 +18,7 @@
     cursor: pointer;
     background: transparent;
     opacity: 100%;
-    &:active{
+    &:hover{
         opacity: 0%;
     }
 }
@@ -36,7 +36,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0%;
-    &:active{
+    transition-duration: 0.3s;
+    &:hover{
         opacity: 100%;
     }
 }

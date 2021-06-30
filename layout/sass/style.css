@@ -71,7 +71,7 @@
   background: transparent;
   opacity: 100%;
 }
-.emptyheart:active {
+.emptyheart:hover {
   opacity: 0%;
 }
 
@@ -87,8 +87,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0%;
+  transition-duration: 0.3s;
 }
-.fullheart:active {
+.fullheart:hover {
   opacity: 100%;
 }
 
