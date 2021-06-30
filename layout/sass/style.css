@@ -428,10 +428,6 @@ main {
   font-family: Shrikhand;
   flex-basis: 100%;
   margin: auto;
-  margin-right: 20px;
-}
-.header__logoindex {
-  margin-right: -7px;
 }
 
 /* styleheader*/
