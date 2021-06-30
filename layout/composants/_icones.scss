@@ -10,7 +10,9 @@
 }
 
 .emptyheart{
-    grid-column: 1;
+    cursor: pointer;
+    text-align: right;
+    grid-column: 2;
     grid-row: 1;
     font-size:30px;
     background-image: transparent;
@@ -25,7 +27,8 @@
 
 
 .fullheart{
-    grid-column: 1;
+    text-align: right;
+    grid-column: 2;
     grid-row: 1;
     cursor: pointer;
     font-size:30px;

@@ -1,21 +1,17 @@
 /*style boutons*/
 .explore__button{
-    @include cardradiusandshadow();
     @include buttonlayout();
     width: fit-content;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
     border: none;
-    font-weight: 600;
 }
 
 .commanderbtn{
-    @include cardradiusandshadow();
     @include buttonlayout();
     width: fit-content;
     margin: auto;
     border: none;
-    font-weight: 600;
 }
 /*style boutons*/
