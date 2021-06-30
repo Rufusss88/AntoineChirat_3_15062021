@@ -1,17 +1,15 @@
 .commanderbtn{
     transition-duration: .25s;
     &:hover{
-        opacity: 80%;
-        box-shadow: 25px black;
-        box-shadow: 4px 4px 10px rgb(0 0 0 / 50%);
+        background-color: #fff;
+        box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 50%);
     }
 }
 
 .explore__button{
     &:hover{
-        background-color: lighten($color: #b625a7, $amount: 10%);
-        border: 1px  groove white;
-        box-shadow: 2px 2px 5px rgb(0 0 0 / 50%);
+        background-color: #fff;
+        box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 50%);
     }
 }
 

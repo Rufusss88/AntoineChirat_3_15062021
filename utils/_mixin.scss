@@ -10,6 +10,7 @@
     color: white;
     box-shadow: 3px black;
     background-image: linear-gradient( 0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    background-color: #686868;
     width: 300px;
     opacity: 100%;
     box-shadow: 4px 4px 10px rgb(0 0 0 / 25%);
@@ -32,6 +33,6 @@
 }
 
 @mixin margindesktop{
-    margin-left: 175px; 
-    margin-right: 175px;
+    margin-left: 140px; 
+    margin-right: 140px;
 }

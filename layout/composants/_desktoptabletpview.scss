@@ -7,10 +7,10 @@
         padding-left: 112px;
         padding-right: 112px;
     }
-
-    .restaurants__title{
+    
+    main .restaurants__headtitle{
         text-align: center;
-    }
+    } 
 
     .menu{
         @include margindesktop;
@@ -59,7 +59,7 @@
         align-items: center;
         &__etapes {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         }   
     }
 
