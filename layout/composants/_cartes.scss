@@ -54,6 +54,7 @@
         margin-bottom: 15px;
         margin-left: 10px;
         margin-right: 10px;
+        height:60px;
             &__text{
             flex-basis: 90%;
             padding: 10px;
@@ -85,20 +86,19 @@
             justify-content: center;
             align-items: center;
             background-color: #99E2D0;
-            width: 125px;
+            width: 20px;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             opacity: 0;
-            width: 20px;
             transition-duration: 0.75s;
-                &:hover{
-                    opacity: 1;
-                    width: 100px;
-                    &.iconecercle{
-                    rotate: 360deg;
-                    }
-                }
-            } 
+            white-space : nowrap;
+            overflow : hidden;
+            text-overflow: ellipsis;
+            &:hover{
+                opacity: 1;
+                width: 110px;
+            }
+        } 
 }
 
 .restaurants__cartes{
