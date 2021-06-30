@@ -170,6 +170,7 @@
   margin-bottom: 15px;
   margin-left: 10px;
   margin-right: 10px;
+  height: 60px;
 }
 .foodcard__text {
   flex-basis: 90%;
@@ -201,10 +202,18 @@
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
-  width: 125px;
+  width: 20px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  opacity: 0;
+  transition-duration: 0.75s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.foodcard__check:hover {
   opacity: 1;
+  width: 110px;
 }
 
 .restaurants__cartes {
