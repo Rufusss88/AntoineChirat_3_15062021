@@ -107,10 +107,6 @@
   color: white;
   transform-origin: center;
 }
-.iconecercle:hover {
-  -webkit-animation: animationiconecercle 1s ease 0s 1 normal both;
-          animation: animationiconecercle 1s ease 0s 1 normal both;
-}
 
 /* style carte*/
 .fonctionnement__etapes {
@@ -187,6 +183,7 @@
   margin-left: 5px;
   font-size: 0.9em;
   font-weight: 100;
+  text-overflow: ellipsis;
 }
 .foodcard__price {
   margin-right: 5px;
@@ -204,7 +201,16 @@
   width: 125px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  opacity: 0;
+  width: 20px;
+  transition-duration: 0.75s;
+}
+.foodcard__check:hover {
   opacity: 1;
+  width: 100px;
+}
+.foodcard__check:hover.iconecercle {
+  rotate: 360deg;
 }
 
 .restaurants__cartes {
