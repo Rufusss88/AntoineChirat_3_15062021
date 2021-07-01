@@ -10,6 +10,7 @@
     
     main .restaurants__headtitle{
         text-align: center;
+        padding:0;
     } 
 
     .menu{
@@ -27,32 +28,33 @@
     .restaurants__cartecontainer{
         display: flex;
         flex-wrap: wrap;
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
         justify-content: center;
     }
 
     .carte1{
-        min-width: 525px;
-        max-width: 525px;
+        min-width: 500px;
+        max-width: 500px;
     }
 
     .carte2{
-        min-width: 525px;
-        max-width: 525px;
+        min-width: 500px;
+        max-width: 500px;
     }
 
     .carte3{
-        min-width: 525px;
-        max-width: 525px;
+        min-width: 500px;
+        max-width: 500px;
     }
 
     .carte4{
-        min-width: 525px;
-        max-width: 525px;
+        min-width: 500px;
+        max-width: 500px;
     }
 
     .fonctionnement{
+        margin:0;
         padding-left: 133px;
         padding-right: 147px;
         text-align: center;
@@ -62,9 +64,12 @@
         flex-direction: row;
         }   
     }
+    .footer__link{
+        justify-content: center;
+    }
 
-    .footer{
-        padding-left:145px;
+    .footer__list a{
+        margin: 0px 15px;
     }
 }
 

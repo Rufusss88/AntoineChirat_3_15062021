@@ -601,24 +601,24 @@ body {
   font-weight: 100;
   margin-bottom: 50px;
   flex-basis: 33%;
-  -webkit-animation: animationfoodcard 2000ms linear 1ms 1 normal forwards;
-          animation: animationfoodcard 2000ms linear 1ms 1 normal forwards;
+  -webkit-animation: animationfoodcard 100ms linear 1ms 1 normal forwards;
+          animation: animationfoodcard 100ms linear 1ms 1 normal forwards;
 }
 .menu__plats {
   font-weight: 100;
   margin-bottom: 50px;
   flex-basis: 34%;
   opacity: 0;
-  -webkit-animation: animationfoodcard 2000ms linear 200ms normal forwards;
-          animation: animationfoodcard 2000ms linear 200ms normal forwards;
+  -webkit-animation: animationfoodcard 100ms linear 200ms normal forwards;
+          animation: animationfoodcard 100ms linear 200ms normal forwards;
 }
 .menu__dessert {
   font-weight: 100;
   margin-bottom: 50px;
   flex-basis: 33%;
   opacity: 0;
-  -webkit-animation: animationfoodcard 2000ms linear 400ms normal forwards;
-          animation: animationfoodcard 2000ms linear 400ms normal forwards;
+  -webkit-animation: animationfoodcard 100ms linear 400ms normal forwards;
+          animation: animationfoodcard 100ms linear 400ms normal forwards;
 }
 
 .foodtitle {

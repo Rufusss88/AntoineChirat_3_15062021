@@ -55,6 +55,12 @@
         margin-left: 10px;
         margin-right: 10px;
         height:60px;
+        &:hover{
+            .foodcard__check{
+                opacity: 1;
+                width: 110px;
+            }
+        }
             &__text{
             flex-basis: 90%;
             padding: 10px;
@@ -67,6 +73,9 @@
             font-weight: 500;
         }
             &__description{
+            white-space: nowrap;
+            max-width: 260px;
+            overflow: hidden;
             margin-bottom: 0;
             margin-left: 5px;
             font-size: 0.9em;
@@ -90,14 +99,10 @@
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             opacity: 0;
-            transition-duration: 0.75s;
+            transition-duration: 0.8s;
             white-space : nowrap;
             overflow : hidden;
             text-overflow: ellipsis;
-            &:hover{
-                opacity: 1;
-                width: 110px;
-            }
         } 
 }
 

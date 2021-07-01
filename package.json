@@ -4,7 +4,8 @@
   "description": "P3 reservia",
   "main": "index.js",
   "scripts": {
-    "scss" :"node-sass -watch scss -o css"
+    "scss"
+     :"node-sass -watch scss -o css"
   },
   "repository": {
     "type": "git",
