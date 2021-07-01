@@ -784,6 +784,13 @@ body {
     max-width: 500px;
   }
 
+  .foodcard:hover .foodcard__title {
+    max-width: 500px;
+  }
+  .foodcard:hover .foodcard__description {
+    max-width: 500px;
+  }
+
   .foodcard__title {
     text-overflow: initial;
     overflow: initial;
