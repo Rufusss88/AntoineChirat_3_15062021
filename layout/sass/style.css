@@ -167,14 +167,6 @@
   margin-left: 10px;
   margin-right: 10px;
   height: 60px;
-  -webkit-animation: jump 1s;
-          animation: jump 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation: animationfoodsection 0.6s 1 normal both;
-          animation: animationfoodsection 0.6s 1 normal both;
-  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
 }
 .foodcard:hover .foodcard__title {
   max-width: 180px;
@@ -183,7 +175,7 @@
   max-width: 180px;
 }
 .foodcard:hover .foodcard__check {
-  width: 110px;
+  width: 80px;
   opacity: 1;
 }
 .foodcard:hover .foodcard__checkcircle {
@@ -463,34 +455,6 @@ main {
   }
 }
 /*Keyframes test pour améliorer l'animation sur le coeur*/
-@-webkit-keyframes jump {
-  0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(0.5rem);
-  }
-  75% {
-    transform: translateY(-0.5rem);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes jump {
-  0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(0.5rem);
-  }
-  75% {
-    transform: translateY(-0.5rem);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 /* styleheader*/
 .header {
   display: flex;
@@ -749,7 +713,6 @@ body {
   }
 
   .foodcard {
-    width: 400px;
     height: 60px;
   }
 
@@ -763,7 +726,7 @@ body {
   }
   .menu__container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .restaurants__cartecontainer {
@@ -818,6 +781,27 @@ body {
   .spinner {
     top: 30%;
     left: 40%;
+  }
+
+  .foodcard__text:hover {
+    max-width: 500px;
+  }
+
+  .foodcard__title {
+    text-overflow: initial;
+    overflow: initial;
+    max-width: 400px;
+  }
+
+  .foodcard__description {
+    text-overflow: initial;
+    overflow: initial;
+    max-width: 400px;
+  }
+}
+@media all and (min-width: 1300px) and (max-width: 2000px) {
+  .menu_container {
+    display: flex;
   }
 }
 /* styledesktop*//*# sourceMappingURL=style.css.map */
