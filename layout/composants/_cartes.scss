@@ -55,12 +55,20 @@
         margin-left: 10px;
         margin-right: 10px;
         height:60px;
+        animation: jump 1s;
+        animation-iteration-count: 1;
         animation: animationfoodsection 0.6s 1 normal both;
         animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
         &:hover{
+            .foodcard__title{
+                max-width: 180px;
+            }
+            .foodcard__description{
+                max-width: 180px;
+            }
             .foodcard__check{
-                opacity: 1;
                 width: 110px;
+                opacity: 1;
             }
             .foodcard__checkcircle{
                 transform: rotate(360deg);
@@ -70,6 +78,7 @@
             &__text{
             flex-basis: 90%;
             padding: 10px;
+            flex:1;
         }
             &__title{
             margin:0;
@@ -77,10 +86,14 @@
             margin-left: 5px;
             font-size: 1em; 
             font-weight: 500;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-width: 270px;
         }
             &__description{
             white-space: nowrap;
-            max-width: 260px;
+            max-width: 270px;
             overflow: hidden;
             margin-bottom: 0;
             margin-left: 5px;
@@ -106,9 +119,6 @@
             border-bottom-right-radius: 15px;
             opacity: 0;
             transition-duration: 0.8s;
-            white-space : nowrap;
-            overflow : hidden;
-            text-overflow: ellipsis;
         } 
 }
 
