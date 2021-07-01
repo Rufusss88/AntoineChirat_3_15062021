@@ -221,7 +221,7 @@
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
-  width: 20px;
+  width: 0px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   opacity: 0;
@@ -797,6 +797,12 @@ body {
     text-overflow: initial;
     overflow: initial;
     max-width: 400px;
+  }
+}
+@media all and (min-width: 1250px) {
+  .menu__container {
+    display: flex;
+    flex-direction: row;
   }
 }
 /* styledesktop*//*# sourceMappingURL=style.css.map */
