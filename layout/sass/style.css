@@ -167,10 +167,18 @@
   margin-left: 10px;
   margin-right: 10px;
   height: 60px;
+  -webkit-animation: animationfoodsection 0.6s 1 normal both;
+          animation: animationfoodsection 0.6s 1 normal both;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
 }
 .foodcard:hover .foodcard__check {
   opacity: 1;
   width: 110px;
+}
+.foodcard:hover .foodcard__checkcircle {
+  transform: rotate(360deg);
+  transition-duration: 0.9s;
 }
 .foodcard__text {
   flex-basis: 90%;
@@ -343,74 +351,72 @@ main {
     opacity: 1;
   }
 }
-@-webkit-keyframes animationfoodcard {
+@-webkit-keyframes animationfoodsection {
   0% {
-    opacity: 0;
-    color: white;
-  }
-  20% {
-    opacity: 0.4;
-    color: #cccccc;
-  }
-  40% {
-    opacity: 0.5;
-    color: #999999;
-  }
-  60% {
-    opacity: 0.6;
-    color: #999999;
-  }
-  80% {
-    opacity: 0.7;
-    color: #333333;
+    transform: scale(0);
   }
   100% {
-    opacity: 1;
-    color: black;
+    transform: scale(1);
   }
 }
-@keyframes animationfoodcard {
+@keyframes animationfoodsection {
   0% {
-    opacity: 0;
-    color: white;
-  }
-  20% {
-    opacity: 0.4;
-    color: #cccccc;
-  }
-  40% {
-    opacity: 0.5;
-    color: #999999;
-  }
-  60% {
-    opacity: 0.6;
-    color: #999999;
-  }
-  80% {
-    opacity: 0.7;
-    color: #333333;
+    transform: scale(0);
   }
   100% {
-    opacity: 1;
-    color: black;
+    transform: scale(1);
   }
 }
-@-webkit-keyframes animationiconecercle {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.delay-0 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
-@keyframes animationiconecercle {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+
+.delay-1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
+
+.delay-2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.delay-3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.delay-4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.delay-5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.delay-6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.delay-7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.delay-8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.delay-9 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
 /*Keyframes test pour améliorer l'animation sur le coeur*/
 @-webkit-keyframes animationheartempty {
   0% {
@@ -601,24 +607,16 @@ body {
   font-weight: 100;
   margin-bottom: 50px;
   flex-basis: 33%;
-  -webkit-animation: animationfoodcard 2000ms linear 1ms 1 normal forwards;
-          animation: animationfoodcard 2000ms linear 1ms 1 normal forwards;
 }
 .menu__plats {
   font-weight: 100;
   margin-bottom: 50px;
   flex-basis: 34%;
-  opacity: 0;
-  -webkit-animation: animationfoodcard 2000ms linear 200ms normal forwards;
-          animation: animationfoodcard 2000ms linear 200ms normal forwards;
 }
 .menu__dessert {
   font-weight: 100;
   margin-bottom: 50px;
   flex-basis: 33%;
-  opacity: 0;
-  -webkit-animation: animationfoodcard 2000ms linear 400ms normal forwards;
-          animation: animationfoodcard 2000ms linear 400ms normal forwards;
 }
 
 .foodtitle {
@@ -708,6 +706,11 @@ body {
   main .restaurants__headtitle {
     text-align: center;
     padding: 0;
+  }
+
+  .foodcard {
+    width: 400px;
+    height: 60px;
   }
 
   .menu {

@@ -13,6 +13,11 @@
         padding:0;
     } 
 
+    .foodcard{
+        width: 400px;
+        height: 60px;
+    }
+
     .menu{
         @include margindesktop;
         &__title{

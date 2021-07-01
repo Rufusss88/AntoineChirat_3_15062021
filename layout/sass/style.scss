@@ -151,21 +151,16 @@ body{
             font-weight: 100;
             margin-bottom: 50px;          
             flex-basis: 33%;
-            animation: animationfoodcard 2000ms linear 1ms 1 normal forwards;
         }
     &__plats{
             font-weight: 100;
             margin-bottom: 50px;
             flex-basis: 34%;
-            opacity: 0;
-            animation: animationfoodcard 2000ms linear 200ms  normal forwards;
         }
     &__dessert{
             font-weight: 100;
             margin-bottom: 50px;
             flex-basis: 33%;
-            opacity: 0;
-            animation: animationfoodcard 2000ms linear 400ms  normal forwards;
         }   
 }
 

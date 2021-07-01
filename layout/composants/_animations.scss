@@ -58,40 +58,54 @@ main{
     }
 }
 
-@keyframes animationfoodcard {
-    0% {
-        opacity: 0;
-        color: white;
-    }
-    20%{
-        opacity: 0.4;
-        color: darken($color: white, $amount: 20%);
-    }
-    40%{
-        opacity: 0.5;
-        color: darken($color: white, $amount: 40%);
-    }
-    60%{
-        opacity: 0.6;
-        color: darken($color: white, $amount: 40%);
-    }
-    80%{
-        opacity: 0.7;
-        color: darken($color: white, $amount: 80%);
-    }
-    100%{
-        opacity: 1;
-        color: black;
-    }
+
+@keyframes animationfoodsection {
+        0% {
+          transform: scale(0)
+        }
+        100% {
+          transform: scale(1);
+        }
 }
 
-@keyframes animationiconecercle {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }   
+.delay-0{
+    animation-delay: 0s;
+}
+
+.delay-1{
+    animation-delay: 0.1s;
+}
+
+.delay-2{
+    animation-delay: .2s;
+}
+
+.delay-3{
+    animation-delay: .3s;
+}
+
+.delay-4{
+    animation-delay: .4s;
+}
+
+.delay-5{
+    animation-delay: .5s;
+}
+
+.delay-6{
+    animation-delay: .6s;
+}
+
+.delay-7{
+    animation-delay: .7s;
+}
+
+.delay-8{
+    animation-delay: .8s;
+}
+
+.delay-9{
+    animation-delay: .9s;
 }
 
 /*Keyframes test pour améliorer l'animation sur le coeur*/

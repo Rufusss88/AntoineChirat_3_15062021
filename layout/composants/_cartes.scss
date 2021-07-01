@@ -55,10 +55,16 @@
         margin-left: 10px;
         margin-right: 10px;
         height:60px;
+        animation: animationfoodsection 0.6s 1 normal both;
+        animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
         &:hover{
             .foodcard__check{
                 opacity: 1;
                 width: 110px;
+            }
+            .foodcard__checkcircle{
+                transform: rotate(360deg);
+                transition-duration: .9s;
             }
         }
             &__text{
