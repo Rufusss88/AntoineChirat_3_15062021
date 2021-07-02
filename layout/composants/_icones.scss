@@ -15,6 +15,7 @@
     grid-column: 2;
     grid-row: 1;
     font-size:30px;
+    background-image: transparent;
     transition: all 0.3s ease; 
     cursor: pointer;
     background: transparent;
@@ -34,6 +35,7 @@
     display: block;
     color: #9c47fc;
     background: -webkit-linear-gradient($primary, $secondary);
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0%;
     transition-duration: 0.3s;
