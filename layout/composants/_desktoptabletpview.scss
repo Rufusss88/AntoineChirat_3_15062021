@@ -1,117 +1,157 @@
-@media all and (min-width: 950px) {
-    .spinner{
-        top: 43%;
-        left: 44%;
-    }
-    main .restaurants{
-        padding-left: 112px;
-        padding-right: 112px;
-    }
-    
-    main .restaurants__headtitle{
-        text-align: center;
-        padding:0;
-    } 
 
-    .foodcard{
-        height: 60px;
-    }
+@media all and (min-width: 950px)
+{
+	.spinner
+	{
+		top: 43%;
+		left: 44%;
+	}
 
-    .menu{
-        @include margindesktop;
-        &__title{
-            font-size:1.24em;
-            margin-left: 32px;
-        }
-        &__container{
-            display: flex;
-            flex-direction: column;
-        }
-    }
+	main .restaurants
+	{
+		padding-left: 112px;
+		padding-right: 112px;
+	}
 
-    .restaurants__cartecontainer{
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 0px;
-        margin-right: 0px;
-        justify-content: center;
-    }
+	main .restaurants__headtitle
+	{
+		text-align: center;
+		padding:0;
+	}
 
-    .carte1{
-        min-width: 500px;
-        max-width: 500px;
-    }
+	.foodcard
+	{
+		height: 60px;
+	}
 
-    .carte2{
-        min-width: 500px;
-        max-width: 500px;
-    }
+	.menu
+	{
+		@include margindesktop;
+		&__title
+		{
+			font-size:1.24em;
+			margin-left: 32px;
+		}
 
-    .carte3{
-        min-width: 500px;
-        max-width: 500px;
-    }
+		&__container
+		{
+			display: flex;
+			flex-direction: column;
+		}
+	}
 
-    .carte4{
-        min-width: 500px;
-        max-width: 500px;
-    }
+	.restaurants__cartecontainer
+	{
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 0px;
+		margin-right: 0px;
+		justify-content: center;
+	}
 
-    .fonctionnement{
-        margin:0;
-        padding-left: 133px;
-        padding-right: 147px;
-        text-align: center;
-        align-items: center;
-        &__etapes {
-        display: flex;
-        flex-direction: row;
-        }   
-    }
-    .footer__link{
-        justify-content: center;
-    }
+	.carte1
+	{
+		min-width: 500px;
+		max-width: 500px;
+	}
 
-    .footer__list a{
-        margin: 0px 15px;
-    }
+	.carte2
+	{
+		min-width: 500px;
+		max-width: 500px;
+	}
+
+	.carte3
+	{
+		min-width: 500px;
+		max-width: 500px;
+	}
+
+	.carte4
+	{
+		min-width: 500px;
+		max-width: 500px;
+	}
+
+	.fonctionnement
+	{
+		margin:0;
+		padding-left: 133px;
+		padding-right: 147px;
+		text-align: center;
+		align-items: center;
+		&__etapes
+		{
+			display: flex;
+			flex-direction: row;
+		}
+	}
+
+	.footer__link
+	{
+		justify-content: center;
+	}
+
+	.footer__list a
+	{
+		margin: 0px 15px;
+	}
 }
 
-@media all and (min-width:768px) and (max-width:950px) {
-    .spinner{
-        top: 30%;
-        left: 40%;
-    }
+@media all and (min-width:768px) and (max-width:950px)
+{
+	.spinner
+	{
+		top: 30%;
+		left: 40%;
+	}
 
-    .foodcard__text{
-        &:hover{
-            max-width: 500px;
-        }
-    }
-    .foodcard:hover{
-        .foodcard__title{
-            max-width: 500px;
-        }
-        .foodcard__description{
-            max-width: 500px;
-        }
-    }
-    .foodcard__title{
-        text-overflow:initial;
-        overflow: initial;
-        max-width: 400px;
-    }
+	.foodcard__text
+	{
+		&:hover
+		{
+			max-width: 500px;
+		}
+	}
 
-    .foodcard__description{
-        text-overflow:initial;
-        overflow: initial;
-        max-width: 400px;
-    }
+	.foodcard:hover
+	{
+		.foodcard__title
+		{
+			max-width: 500px;
+		}
+
+		.foodcard__description
+		{
+			max-width: 500px;
+		}
+	}
+
+	.foodcard__title
+	{
+		text-overflow:initial;
+		overflow: initial;
+		max-width: 400px;
+	}
+
+	.foodcard__description
+	{
+		text-overflow:initial;
+		overflow: initial;
+		max-width: 400px;
+	}
 }
 
-@media all and (min-width: 1250px) {
-    .menu__container{
-        display: flex;
-        flex-direction: row;
-    }
+@media all and (min-width: 1250px)
+{
+	.menu__container
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.cardcontainer
+	{
+		width: 320px;
+	}
 }

@@ -1,129 +1,166 @@
-.commanderbtn{
-    transition-duration: .25s;
-    &:hover{
-        background-color: #fff;
-        box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 50%);
-    }
+
+.commanderbtn
+{
+	transition-duration: .25s;
+	&:hover
+	{
+		background-color: #fff;
+		box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 50%);
+	}
 }
 
-.explore__button{
-    &:hover{
-        background-color: #fff;
-        box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 50%);
-    }
+.explore__button
+{
+	&:hover
+	{
+		background-color: #fff;
+		box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 50%);
+	}
 }
 
-.loadingspinnercontainer{
-    width: 100%;
-    max-height: 1552px;
-    position: absolute;
-    z-index: 3;
-    opacity: 0.8;
-    animation: animationspinner 300ms linear 1s 1 normal forwards;
+.loadingspinnercontainer
+{
+	width: 100%;
+	max-height: 1552px;
+	position: absolute;
+	z-index: 3;
+	opacity: 0.8;
+	animation: animationspinner 300ms linear 1s 1 normal forwards;
 }
 
-.spinner{
-    top: 44%;
-    left: 25%;
-    background-color: transparent;
-    position: fixed;
-    width: max-content;
-    height: max-content;
-    opacity: 1;
-    animation: animationspinner 300ms linear 1s normal forwards;
+.spinner
+{
+	top: 44%;
+	left: 25%;
+	background-color: transparent;
+	position: fixed;
+	width: max-content;
+	height: max-content;
+	opacity: 1;
+	animation: animationspinner 300ms linear 1s normal forwards;
 }
 
-main{
-    opacity: 0.5;
-    animation: animationmain 300ms linear 1s 1 normal forwards;
+main
+{
+	opacity: 0.5;
+	animation: animationmain 300ms linear 1s 1 normal forwards;
 }
 
-@keyframes animationspinner {
-    0% {
-        opacity: 0.8;
-        z-index: 3;
-    }
-    100%{
-        opacity: 0;
-        z-index: -1;
-    }
+@keyframes animationspinner
+{
+	0%
+	{
+		opacity: 0.8;
+		z-index: 3;
+	}
+
+	100%
+	{
+		opacity: 0;
+		z-index: -1;
+	}
 }
 
-@keyframes animationmain {
-    0% {
-        opacity: 0.5;
-    }
-    100%{
-        opacity: 1;
-    }
+@keyframes animationmain
+{
+	0%
+	{
+		opacity: 0.5;
+	}
+
+	100%
+	{
+		opacity: 1;
+	}
 }
 
+@keyframes animationfoodsection
+{
+	0%
+	{
+	transform: scale(0)}
 
-@keyframes animationfoodsection {
-        0% {
-          transform: scale(0)
-        }
-        100% {
-          transform: scale(1);
-        }
+	100%
+	{
+		transform: scale(1);
+	}
 }
 
-.delay-0{
-    animation-delay: 0s;
+.delay-0
+{
+	animation-delay: 0s;
 }
 
-.delay-1{
-    animation-delay: 0.1s;
+.delay-1
+{
+	animation-delay: 0.1s;
 }
 
-.delay-2{
-    animation-delay: .2s;
+.delay-2
+{
+	animation-delay: .2s;
 }
 
-.delay-3{
-    animation-delay: .3s;
+.delay-3
+{
+	animation-delay: .3s;
 }
 
-.delay-4{
-    animation-delay: .4s;
+.delay-4
+{
+	animation-delay: .4s;
 }
 
-.delay-5{
-    animation-delay: .5s;
+.delay-5
+{
+	animation-delay: .5s;
 }
 
-.delay-6{
-    animation-delay: .6s;
+.delay-6
+{
+	animation-delay: .6s;
 }
 
-.delay-7{
-    animation-delay: .7s;
+.delay-7
+{
+	animation-delay: .7s;
 }
 
-.delay-8{
-    animation-delay: .8s;
+.delay-8
+{
+	animation-delay: .8s;
 }
 
-.delay-9{
-    animation-delay: .9s;
+.delay-9
+{
+	animation-delay: .9s;
 }
 
 /*Keyframes test pour améliorer l'animation sur le coeur*/
-@keyframes animationheartempty {
-    0% {
-        opacity: 100%;
-    }
-    100%{
-        opacity: 0%;
-    }
+@keyframes animationheartempty
+{
+	0%
+	{
+		opacity: 100%;
+	}
+
+	100%
+	{
+		opacity: 0%;
+	}
 }
 
-@keyframes animationheartfull {
-    0% {
-        opacity: 0%;
-    }
-    100%{
-        opacity: 100%;
-    }
+@keyframes animationheartfull
+{
+	0%
+	{
+		opacity: 0%;
+	}
+
+	100%
+	{
+		opacity: 100%;
+	}
 }
+
 /*Keyframes test pour améliorer l'animation sur le coeur*/
