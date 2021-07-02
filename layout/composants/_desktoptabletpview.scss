@@ -87,9 +87,14 @@
 		}
 	}
 
+    .footer__logo{
+        text-align: center;
+    }
+
 	.footer__link
 	{
 		justify-content: center;
+        display: flex;
 	}
 
 	.footer__list a
@@ -154,4 +159,6 @@
 	{
 		width: 320px;
 	}
+
+
 }
