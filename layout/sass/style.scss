@@ -1,9 +1,9 @@
-@import "/Users/chips/Desktop/AntoineChirat_3_15062021/utils/_variables.scss";
-@import "/Users/chips/Desktop/AntoineChirat_3_15062021/utils/_mixin.scss";
-@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/composants/_bouton.scss";
-@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/composants/_icones.scss";
-@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/composants/_cartes.scss";
-@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/composants/_animations.scss";
+@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/sass/utils/_variables.scss";
+@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/sass/utils/_mixin.scss";
+@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/sass/utils/_bouton.scss";
+@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/sass/utils/_icones.scss";
+@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/sass/utils/_cartes.scss";
+@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/sass/utils/_animations.scss";
 
 /* styleheader*/
 .header{
@@ -235,5 +235,5 @@ body{
 }
 
 /* styledesktop*/
-@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/composants/_desktoptabletpview.scss";
+@import "/Users/chips/Desktop/AntoineChirat_3_15062021/layout/sass/utils/_desktoptabletpview.scss";
 /* styledesktop*/
