@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "scss"
-     :"node-sass -watch scss -o css"
+     :"node-sass -watch scss -o css -w"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,28 @@
   "homepage": "https://github.com/Rufusss88/AntoineChirat_3_15062021#readme",
   "dependencies": {
     "node-sass": "^6.0.0"
-  }
+  },
+  "liveSassCompile.settings.formats": [
+    {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/Users/chips/Desktop/AntoineChirat_3_15062021/publichtml/css"
+    },
+    {
+        "extensionName": ".min.css",
+        "format": "compressed",
+        "savePath": "/Users/chips/Desktop/AntoineChirat_3_15062021/publichtml/css"
+    }
+],
+
+"liveSassCompile.settings.excludeList": [
+    "**/node_modules/**",
+    ".vscode/**"
+],
+"liveSassCompile.settings.generateMap": true,
+"liveSassCompile.settings.autoprefix": [
+    "> 1%",
+    "last 2 versions"
+]
 }
+  
